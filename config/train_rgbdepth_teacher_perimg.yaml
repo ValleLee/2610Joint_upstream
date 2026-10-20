@@ -1,0 +1,180 @@
+base_config:
+  - config/logging.yaml
+  - config/wandb.yaml
+  - config/model_marigold.yaml
+
+lr: ${env:LR,3.0e-5}
+max_epoch: 10000
+max_iter: ${env:MAX_ITER,15000}
+save_period: ${env:SAVE_PERIOD,1000}
+validation_period: ${env:VAL_PERIOD,1000}
+visualization_period: ${env:VIS_PERIOD,1000}
+seed: 2024
+
+gt_depth_type: teacher_target_norm
+gt_mask_type: valid_mask_raw
+
+data_root: "."
+
+dataset:
+  data_root: "."
+
+  train:
+    name: "rgb_invdepth_teacher"
+    dir: "${env:PAIRS_DIR,data/pairs}"
+    input_name: "rgb"
+    gt_name: "depth"
+    filenames: "${env:TRAIN_PAIRS_FILENAME,train_pairs.txt}"
+    disp_name: "RGB+DepthCond_PerImg_Train"
+    min_depth: 0.0
+    max_depth: 1.0
+    has_filled_depth: false
+    condition_from_depth: ${env:COND_FROM_DEPTH,true}
+    teacher_from_depth: ${env:TEACHER_FROM_DEPTH,true}
+    condition_representation: ${env:COND_REPR,depth}
+    teacher_representation: ${env:TEACHER_REPR,depth}
+    name_mode: "stem"
+    resize_to_hw:
+      - ${env:RESIZE_H,432}
+      - ${env:RESIZE_W,768}
+
+  val:
+    - name: "rgb_invdepth_teacher"
+      dir: "${env:PAIRS_DIR,data/pairs}"
+      input_name: "rgb"
+      gt_name: "depth"
+      filenames: "${env:VAL_PAIRS_FILENAME,val_pairs.txt}"
+      disp_name: "RGB+DepthCond_PerImg_Val"
+      min_depth: 0.0
+      max_depth: 1.0
+      has_filled_depth: false
+      condition_from_depth: ${env:COND_FROM_DEPTH,true}
+      teacher_from_depth: ${env:TEACHER_FROM_DEPTH,true}
+      condition_representation: ${env:COND_REPR,depth}
+      teacher_representation: ${env:TEACHER_REPR,depth}
+      name_mode: "stem"
+      resize_to_hw:
+        - ${env:RESIZE_H,432}
+        - ${env:RESIZE_W,768}
+
+  vis:
+    - name: "rgb_invdepth_teacher"
+      dir: "${env:PAIRS_DIR,data/pairs}"
+      input_name: "rgb"
+      gt_name: "depth"
+      filenames: "${env:VIS_PAIRS_FILENAME,val_pairs.txt}"
+      disp_name: "RGB+DepthCond_PerImg_Vis"
+      min_depth: 0.0
+      max_depth: 1.0
+      has_filled_depth: false
+      condition_from_depth: ${env:COND_FROM_DEPTH,true}
+      teacher_from_depth: ${env:TEACHER_FROM_DEPTH,true}
+      condition_representation: ${env:COND_REPR,depth}
+      teacher_representation: ${env:TEACHER_REPR,depth}
+      name_mode: "stem"
+      resize_to_hw:
+        - ${env:RESIZE_H,432}
+        - ${env:RESIZE_W,768}
+
+  depth:
+    scale: 1.0
+    invalid_val: 0
+    min_depth: 0.0
+    max_depth: 1.0
+
+train:
+  lr: ${env:LR,3.0e-5}
+  max_iter: ${env:MAX_ITER,15000}
+  save_period: ${env:SAVE_PERIOD,1000}
+  validation_period: ${env:VAL_PERIOD,1000}
+  visualization_period: ${env:VIS_PERIOD,1000}
+  seed: 2024
+
+dataloader:
+  effective_batch_size: ${env:EFFECTIVE_BATCH_SIZE,64}
+  max_train_batch_size: ${env:MAX_TRAIN_BATCH_SIZE,16}
+  num_workers: 8
+  seed: 2024
+  pin_memory: true
+  persistent_workers: true
+  amp: "fp16"
+  grad_checkpointing: true
+
+depth_normalization:
+  type: scale_shift_depth
+  clip: true
+  norm_min: -1.0
+  norm_max: 1.0
+  min_max_quantile: ${env:MIN_MAX_QUANTILE,0.01}
+
+augmentation:
+  lr_flip_p: 0.5
+
+pipeline:
+  name: MarigoldDepthPipeline
+  kwargs:
+    scale_invariant: true
+    shift_invariant: true
+    default_denoising_steps: 4
+    default_processing_resolution: ${env:DEFAULT_PROC_RES,768}
+
+model:
+  pretrained_path: checkpoints/marigold-depth-v1-0
+
+trainer:
+  name: MarigoldDepthTrainerEarlyStop
+  training_noise_scheduler:
+    pretrained_path: checkpoints/marigold-depth-v1-0
+  init_seed: 2024
+  save_period: ${env:SAVE_PERIOD,1000}
+  validation_period: ${env:VAL_PERIOD,1000}
+  visualization_period: ${env:VIS_PERIOD,1000}
+  early_validation_period: ${env:EARLY_VAL_PERIOD,500}
+  early_visualization_period: ${env:EARLY_VIS_PERIOD,500}
+  schedule_switch_iter: ${env:SCHEDULE_SWITCH_ITER,6000}
+  backup_period: ${env:BACKUP_PERIOD,2000}
+  unet_in_channels: 12
+  early_stopping:
+    enabled: ${env:EARLY_STOP_ENABLED,true}
+    start_iter: ${env:EARLY_STOP_START_ITER,10000}
+    patience: ${env:EARLY_STOP_PATIENCE,5}
+    min_delta: ${env:EARLY_STOP_MIN_DELTA,0.00005}
+    goal: ${env:EARLY_STOP_GOAL,minimize}
+
+visualization:
+  head_samples: ${env:VIS_HEAD_SAMPLES,50}
+  tail_samples: ${env:VIS_TAIL_SAMPLES,50}
+
+multi_res_noise:
+  strength: 0.8
+  annealed: true
+  downscale_strategy: original
+
+loss:        { name: mse_loss, kwargs: { reduction: mean } }
+optimizer:   { name: Adam }
+lr_scheduler:
+  name: IterExponential
+  kwargs:
+    total_iter: ${env:LR_TOTAL_ITER,18000}
+    final_ratio: 0.01
+    warmup_steps: ${env:WARMUP_STEPS,200}
+
+validation:
+  denoising_steps: ${env:VAL_DENOISE_STEPS,4}
+  ensemble_size: 1
+  processing_res: 0
+  match_input_res: false
+  target_representation: ${env:VAL_TARGET_REPR,depth}
+  clip_to_dataset_range: ${env:VAL_CLIP_TO_DATASET_RANGE,false}
+  resample_method: bilinear
+  log_main_metric_only: false
+  main_val_metric: ${env:MAIN_VAL_METRIC,joint_latent_mse}
+  main_val_metric_goal: minimize
+  init_seed: 2024
+
+eval:
+  alignment: least_square
+  align_max_res: null
+  eval_metrics:
+    - abs_relative_difference
+    - rmse_linear

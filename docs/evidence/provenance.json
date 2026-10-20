@@ -1,0 +1,283 @@
+{
+  "run": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/output/20261002_164657_train_rgbdepth_teacher_perimg",
+  "pair_file": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/data/pairs/k24_ratio100_val2_ignore/val_pairs.txt",
+  "samples": {
+    "garden_frame_00002": {
+      "val_pair_line_1based": 2,
+      "scene_id": "fb3b73f1d3fe9d192f21f55f5100fd258887aef345f778e0a64fc0587930a6f9",
+      "originals": {
+        "rendered_rgb.png": {
+          "path": "/data2/caoxiaodata/data/GeoQuery_training_data/DIFIX_DL3DV_Benchmark/fb3b73f1d3fe9d192f21f55f5100fd258887aef345f778e0a64fc0587930a6f9/lr/24/train_24/frame_00002.png",
+          "sha256": "bf519e8847aaa32bee7596aa9af7e44047a38ea467ae51094c2318b934b7b26d"
+        },
+        "rendered_depth.npy": {
+          "path": "/data2/caoxiaodata/data/GeoQuery_training_data/DIFIX_DL3DV_Benchmark/fb3b73f1d3fe9d192f21f55f5100fd258887aef345f778e0a64fc0587930a6f9/lr/24/rendered_depth/frame_00002.npy",
+          "sha256": "079e6b9e38a56fe7dca489fa1bfe582e2daa1cb78262215b554c50725763c104"
+        },
+        "da_teacher.npy": {
+          "path": "/data1/lilinwei/Depth-Prior-Optimization-for-SVGS/data/DAV2_depth_inverse/fb3b73f1d3fe9d192f21f55f5100fd258887aef345f778e0a64fc0587930a6f9/rgb_gt/depth_npy/frame_00002.npy",
+          "sha256": "2434f7573171e27269f09a5a16494b2f5ab0f58404d447b6e1cdbafc479a6b41"
+        },
+        "da_rendered.npy": {
+          "path": "/data1/lilinwei/Depth-Prior-Optimization-for-SVGS/data/DAV2_depth_inverse/fb3b73f1d3fe9d192f21f55f5100fd258887aef345f778e0a64fc0587930a6f9/rgb_rendered/depth_npy/frame_00002.npy",
+          "sha256": "7eb6c395dd485da188b904f796e79a54b82f327de37fecc30a02fb7414a81ede"
+        },
+        "da_teacher_original_vis.png": {
+          "path": "/data1/lilinwei/Depth-Prior-Optimization-for-SVGS/data/DAV2_depth_inverse/fb3b73f1d3fe9d192f21f55f5100fd258887aef345f778e0a64fc0587930a6f9/rgb_gt/depth_vis/frame_00002_vis.png",
+          "sha256": "d2ce2446f131e5e4e3e9473c18506ca67e6cf20db0a815989b1102676c37cbaa"
+        },
+        "da_rendered_original_vis.png": {
+          "path": "/data1/lilinwei/Depth-Prior-Optimization-for-SVGS/data/DAV2_depth_inverse/fb3b73f1d3fe9d192f21f55f5100fd258887aef345f778e0a64fc0587930a6f9/rgb_rendered/depth_vis/frame_00002_vis.png",
+          "sha256": "a5f35851be2627d2978da7d94b7e652fa8b425879e8abf71aa41d59653480d58"
+        },
+        "gt_rgb.png": {
+          "path": "/data2/caoxiaodata/data/scp/DL3DV-10K-Benchmark/fb3b73f1d3fe9d192f21f55f5100fd258887aef345f778e0a64fc0587930a6f9/gaussian_splat/images_4/frame_00002.png",
+          "sha256": "24384602b060fd4abc9bc8edd0f3114117f0f75f261d9ffa9ef19f635eee9b7b"
+        },
+        "pred_rgb_014000.png": {
+          "path": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/output/20261002_164657_train_rgbdepth_teacher_perimg/visualization/iter_014000/RGB+DepthCond_PerImg_Vis/_data2_caoxiaodata_data_GeoQuery_training_data_DIFIX_DL3DV_Benchmark_fb3b73f1d3fe9d192f21f55f5100fd258887aef345f778e0a64fc0587930a6f9_lr_24_train_24_frame_00002.png_rgb.png",
+          "sha256": "201e5a598dfbb9f59f334460cafd63bde160bde69ecc7780653fa2ddfdfc8f07"
+        },
+        "pred_depth_014000.npy": {
+          "path": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/output/20261002_164657_train_rgbdepth_teacher_perimg/visualization/iter_014000/RGB+DepthCond_PerImg_Vis/_data2_caoxiaodata_data_GeoQuery_training_data_DIFIX_DL3DV_Benchmark_fb3b73f1d3fe9d192f21f55f5100fd258887aef345f778e0a64fc0587930a6f9_lr_24_train_24_frame_00002.png.npy",
+          "sha256": "436ef5b8584870a78ebd9b11ad9eb0d69e4cbd1866a91edc127af1082185a32c"
+        },
+        "pred_depth_014000_original.png": {
+          "path": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/output/20261002_164657_train_rgbdepth_teacher_perimg/visualization/iter_014000/RGB+DepthCond_PerImg_Vis/_data2_caoxiaodata_data_GeoQuery_training_data_DIFIX_DL3DV_Benchmark_fb3b73f1d3fe9d192f21f55f5100fd258887aef345f778e0a64fc0587930a6f9_lr_24_train_24_frame_00002.png.png",
+          "sha256": "856bcda30c7259125c7143e71b6bb061cd5f705c507098392cec6611f957bbe6"
+        }
+      }
+    },
+    "garden_frame_00021": {
+      "val_pair_line_1based": 21,
+      "scene_id": "fb3b73f1d3fe9d192f21f55f5100fd258887aef345f778e0a64fc0587930a6f9",
+      "originals": {
+        "rendered_rgb.png": {
+          "path": "/data2/caoxiaodata/data/GeoQuery_training_data/DIFIX_DL3DV_Benchmark/fb3b73f1d3fe9d192f21f55f5100fd258887aef345f778e0a64fc0587930a6f9/lr/24/train_24/frame_00021.png",
+          "sha256": "535691863fa56209a2f032f6083d7c19088b82f40b0cee28eb4854dfc43c871f"
+        },
+        "rendered_depth.npy": {
+          "path": "/data2/caoxiaodata/data/GeoQuery_training_data/DIFIX_DL3DV_Benchmark/fb3b73f1d3fe9d192f21f55f5100fd258887aef345f778e0a64fc0587930a6f9/lr/24/rendered_depth/frame_00021.npy",
+          "sha256": "4e6b2861bdf71c7aae1b586fa25e320cf4f24ecb8ecb11bbf58a0ddfa0a5e479"
+        },
+        "da_teacher.npy": {
+          "path": "/data1/lilinwei/Depth-Prior-Optimization-for-SVGS/data/DAV2_depth_inverse/fb3b73f1d3fe9d192f21f55f5100fd258887aef345f778e0a64fc0587930a6f9/rgb_gt/depth_npy/frame_00021.npy",
+          "sha256": "33e8215aef2edda1c955c11c6ea2aea7911ebeee695bc24d9090f669622d6b9b"
+        },
+        "da_rendered.npy": {
+          "path": "/data1/lilinwei/Depth-Prior-Optimization-for-SVGS/data/DAV2_depth_inverse/fb3b73f1d3fe9d192f21f55f5100fd258887aef345f778e0a64fc0587930a6f9/rgb_rendered/depth_npy/frame_00021.npy",
+          "sha256": "b148ab4b76fe635ecb8abeb2af46096d7ba5d98318032db327acf5fa979a6764"
+        },
+        "da_teacher_original_vis.png": {
+          "path": "/data1/lilinwei/Depth-Prior-Optimization-for-SVGS/data/DAV2_depth_inverse/fb3b73f1d3fe9d192f21f55f5100fd258887aef345f778e0a64fc0587930a6f9/rgb_gt/depth_vis/frame_00021_vis.png",
+          "sha256": "dfe4a71efff5b93fda15bca1f381bb3601e9e2fbac415fdd06f62e60200cd376"
+        },
+        "da_rendered_original_vis.png": {
+          "path": "/data1/lilinwei/Depth-Prior-Optimization-for-SVGS/data/DAV2_depth_inverse/fb3b73f1d3fe9d192f21f55f5100fd258887aef345f778e0a64fc0587930a6f9/rgb_rendered/depth_vis/frame_00021_vis.png",
+          "sha256": "21219e44dfd021aaafd99b4e3ed233b25ee70db389a81e58c3042ca7c077a33c"
+        },
+        "gt_rgb.png": {
+          "path": "/data2/caoxiaodata/data/scp/DL3DV-10K-Benchmark/fb3b73f1d3fe9d192f21f55f5100fd258887aef345f778e0a64fc0587930a6f9/gaussian_splat/images_4/frame_00021.png",
+          "sha256": "70399473581d03a02b3bfe155bb8ee89701330e57f408da5e1422179bdb00e1d"
+        },
+        "pred_rgb_014000.png": {
+          "path": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/output/20261002_164657_train_rgbdepth_teacher_perimg/visualization/iter_014000/RGB+DepthCond_PerImg_Vis/_data2_caoxiaodata_data_GeoQuery_training_data_DIFIX_DL3DV_Benchmark_fb3b73f1d3fe9d192f21f55f5100fd258887aef345f778e0a64fc0587930a6f9_lr_24_train_24_frame_00021.png_rgb.png",
+          "sha256": "40eb350ff17c7b8de63662d9c56b8462e84f36aab29ed2bb06ea0ff42acf552b"
+        },
+        "pred_depth_014000.npy": {
+          "path": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/output/20261002_164657_train_rgbdepth_teacher_perimg/visualization/iter_014000/RGB+DepthCond_PerImg_Vis/_data2_caoxiaodata_data_GeoQuery_training_data_DIFIX_DL3DV_Benchmark_fb3b73f1d3fe9d192f21f55f5100fd258887aef345f778e0a64fc0587930a6f9_lr_24_train_24_frame_00021.png.npy",
+          "sha256": "c6053d89d5cf6ca7627c715e6004ceb0f40fbc452d938d56e32842a8a54b85e8"
+        },
+        "pred_depth_014000_original.png": {
+          "path": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/output/20261002_164657_train_rgbdepth_teacher_perimg/visualization/iter_014000/RGB+DepthCond_PerImg_Vis/_data2_caoxiaodata_data_GeoQuery_training_data_DIFIX_DL3DV_Benchmark_fb3b73f1d3fe9d192f21f55f5100fd258887aef345f778e0a64fc0587930a6f9_lr_24_train_24_frame_00021.png.png",
+          "sha256": "67e1ab22fad07cbecb5f7cacfad3f5dee88a4015d8dfb999650c41ce6c231731"
+        }
+      }
+    },
+    "garden_frame_00041": {
+      "val_pair_line_1based": 41,
+      "scene_id": "fb3b73f1d3fe9d192f21f55f5100fd258887aef345f778e0a64fc0587930a6f9",
+      "originals": {
+        "rendered_rgb.png": {
+          "path": "/data2/caoxiaodata/data/GeoQuery_training_data/DIFIX_DL3DV_Benchmark/fb3b73f1d3fe9d192f21f55f5100fd258887aef345f778e0a64fc0587930a6f9/lr/24/train_24/frame_00041.png",
+          "sha256": "44f0bebbc75bb347c76cfc82cb529f8079ebca0651530d76dae7fa086084e3aa"
+        },
+        "rendered_depth.npy": {
+          "path": "/data2/caoxiaodata/data/GeoQuery_training_data/DIFIX_DL3DV_Benchmark/fb3b73f1d3fe9d192f21f55f5100fd258887aef345f778e0a64fc0587930a6f9/lr/24/rendered_depth/frame_00041.npy",
+          "sha256": "5abe025d6fccdc72ec9f9a9aeb8d53be602d0a1c8ffedb3838c6bca2483e543d"
+        },
+        "da_teacher.npy": {
+          "path": "/data1/lilinwei/Depth-Prior-Optimization-for-SVGS/data/DAV2_depth_inverse/fb3b73f1d3fe9d192f21f55f5100fd258887aef345f778e0a64fc0587930a6f9/rgb_gt/depth_npy/frame_00041.npy",
+          "sha256": "1c3cb722e9a94289d86da2d487fedec288e526d98e0f8186d8d2d8e65fa51c6a"
+        },
+        "da_rendered.npy": {
+          "path": "/data1/lilinwei/Depth-Prior-Optimization-for-SVGS/data/DAV2_depth_inverse/fb3b73f1d3fe9d192f21f55f5100fd258887aef345f778e0a64fc0587930a6f9/rgb_rendered/depth_npy/frame_00041.npy",
+          "sha256": "1f707e9ad4ed6f59104dec3a22d9f28e04dc97c8f41af3fb8a56fc18313688d4"
+        },
+        "da_teacher_original_vis.png": {
+          "path": "/data1/lilinwei/Depth-Prior-Optimization-for-SVGS/data/DAV2_depth_inverse/fb3b73f1d3fe9d192f21f55f5100fd258887aef345f778e0a64fc0587930a6f9/rgb_gt/depth_vis/frame_00041_vis.png",
+          "sha256": "9568d107af3f5f8a03797dc477e2512e6bbbb270dbfd95e4a4a4c276164baab4"
+        },
+        "da_rendered_original_vis.png": {
+          "path": "/data1/lilinwei/Depth-Prior-Optimization-for-SVGS/data/DAV2_depth_inverse/fb3b73f1d3fe9d192f21f55f5100fd258887aef345f778e0a64fc0587930a6f9/rgb_rendered/depth_vis/frame_00041_vis.png",
+          "sha256": "9f79cbfab21c1a73c8d82ea3eab5928505ead199bbf04b08aa9cabf327a588ae"
+        },
+        "gt_rgb.png": {
+          "path": "/data2/caoxiaodata/data/scp/DL3DV-10K-Benchmark/fb3b73f1d3fe9d192f21f55f5100fd258887aef345f778e0a64fc0587930a6f9/gaussian_splat/images_4/frame_00041.png",
+          "sha256": "6c821a56780ce6709fd71067ef8a7db8a654ee066073c04decf57d6fd49ef2b1"
+        },
+        "pred_rgb_014000.png": {
+          "path": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/output/20261002_164657_train_rgbdepth_teacher_perimg/visualization/iter_014000/RGB+DepthCond_PerImg_Vis/_data2_caoxiaodata_data_GeoQuery_training_data_DIFIX_DL3DV_Benchmark_fb3b73f1d3fe9d192f21f55f5100fd258887aef345f778e0a64fc0587930a6f9_lr_24_train_24_frame_00041.png_rgb.png",
+          "sha256": "2fe4b16f1869cae84f789c352fc335a21e4a88b74edb8a6ea98b9ab7b44d24f9"
+        },
+        "pred_depth_014000.npy": {
+          "path": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/output/20261002_164657_train_rgbdepth_teacher_perimg/visualization/iter_014000/RGB+DepthCond_PerImg_Vis/_data2_caoxiaodata_data_GeoQuery_training_data_DIFIX_DL3DV_Benchmark_fb3b73f1d3fe9d192f21f55f5100fd258887aef345f778e0a64fc0587930a6f9_lr_24_train_24_frame_00041.png.npy",
+          "sha256": "374b4ec23d76e7f99378813f3dc3d51c2f742d93eb5f42a3a4dd78568ba111bc"
+        },
+        "pred_depth_014000_original.png": {
+          "path": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/output/20261002_164657_train_rgbdepth_teacher_perimg/visualization/iter_014000/RGB+DepthCond_PerImg_Vis/_data2_caoxiaodata_data_GeoQuery_training_data_DIFIX_DL3DV_Benchmark_fb3b73f1d3fe9d192f21f55f5100fd258887aef345f778e0a64fc0587930a6f9_lr_24_train_24_frame_00041.png.png",
+          "sha256": "26decc1e94443a9aa5a928ffbda80323be80a790b6309fb08c9a3d1472fa581b"
+        }
+      }
+    },
+    "sculpture_frame_00320": {
+      "val_pair_line_1based": 666,
+      "scene_id": "ff592398657b3dfe94153332861985194a3e3c9d199c4a3a27a0ce4038e81ade",
+      "originals": {
+        "rendered_rgb.png": {
+          "path": "/data2/caoxiaodata/data/GeoQuery_training_data/DIFIX_DL3DV_Benchmark/ff592398657b3dfe94153332861985194a3e3c9d199c4a3a27a0ce4038e81ade/lr/24/train_24/frame_00320.png",
+          "sha256": "3ca884c882e615363e0adbf7d82e06bd9da2509161ae8f9a250327f0023e4ffa"
+        },
+        "rendered_depth.npy": {
+          "path": "/data2/caoxiaodata/data/GeoQuery_training_data/DIFIX_DL3DV_Benchmark/ff592398657b3dfe94153332861985194a3e3c9d199c4a3a27a0ce4038e81ade/lr/24/rendered_depth/frame_00320.npy",
+          "sha256": "cece070e931bf23177937915cae098042b3ff2be6808e2e1d8aa453850fb2405"
+        },
+        "da_teacher.npy": {
+          "path": "/data1/lilinwei/Depth-Prior-Optimization-for-SVGS/data/DAV2_depth_inverse/ff592398657b3dfe94153332861985194a3e3c9d199c4a3a27a0ce4038e81ade/rgb_gt/depth_npy/frame_00320.npy",
+          "sha256": "8a066e07e54c2b3e998a57e82f66603931265b613d451e68d17691b6b3b830f1"
+        },
+        "da_rendered.npy": {
+          "path": "/data1/lilinwei/Depth-Prior-Optimization-for-SVGS/data/DAV2_depth_inverse/ff592398657b3dfe94153332861985194a3e3c9d199c4a3a27a0ce4038e81ade/rgb_rendered/depth_npy/frame_00320.npy",
+          "sha256": "594b802f630531166a6c2f039e1ef709732dd69f2d1ee310c17303c1109015b1"
+        },
+        "da_teacher_original_vis.png": {
+          "path": "/data1/lilinwei/Depth-Prior-Optimization-for-SVGS/data/DAV2_depth_inverse/ff592398657b3dfe94153332861985194a3e3c9d199c4a3a27a0ce4038e81ade/rgb_gt/depth_vis/frame_00320_vis.png",
+          "sha256": "a2287e3d0cf7c49899fd69d61cccd3e38739e1fff3378f4cf6cfa47e74c4ba3e"
+        },
+        "da_rendered_original_vis.png": {
+          "path": "/data1/lilinwei/Depth-Prior-Optimization-for-SVGS/data/DAV2_depth_inverse/ff592398657b3dfe94153332861985194a3e3c9d199c4a3a27a0ce4038e81ade/rgb_rendered/depth_vis/frame_00320_vis.png",
+          "sha256": "5fd7e9f804667313db9a8d88ddf7c7633a4398c93e3181a63c9567d42d2a0fe5"
+        },
+        "gt_rgb.png": {
+          "path": "/data2/caoxiaodata/data/scp/DL3DV-10K-Benchmark/ff592398657b3dfe94153332861985194a3e3c9d199c4a3a27a0ce4038e81ade/gaussian_splat/images_4/frame_00320.png",
+          "sha256": "cc3aea8dd83aad26f4a30c87a3f7fdbab3e1ff666848cccc9dc396581ed7c85c"
+        },
+        "pred_rgb_014000.png": {
+          "path": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/output/20261002_164657_train_rgbdepth_teacher_perimg/visualization/iter_014000/RGB+DepthCond_PerImg_Vis/_data2_caoxiaodata_data_GeoQuery_training_data_DIFIX_DL3DV_Benchmark_ff592398657b3dfe94153332861985194a3e3c9d199c4a3a27a0ce4038e81ade_lr_24_train_24_frame_00320.png_rgb.png",
+          "sha256": "5e807e9cf8e7104c8afaf8a4a1d150e3463a0fb253f32fa3ac25d46fc2170afb"
+        },
+        "pred_depth_014000.npy": {
+          "path": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/output/20261002_164657_train_rgbdepth_teacher_perimg/visualization/iter_014000/RGB+DepthCond_PerImg_Vis/_data2_caoxiaodata_data_GeoQuery_training_data_DIFIX_DL3DV_Benchmark_ff592398657b3dfe94153332861985194a3e3c9d199c4a3a27a0ce4038e81ade_lr_24_train_24_frame_00320.png.npy",
+          "sha256": "0fc7fd8b423ed576f6f1e47b11abc7a07f79c7a8bc370c5684129c4f78cd0179"
+        },
+        "pred_depth_014000_original.png": {
+          "path": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/output/20261002_164657_train_rgbdepth_teacher_perimg/visualization/iter_014000/RGB+DepthCond_PerImg_Vis/_data2_caoxiaodata_data_GeoQuery_training_data_DIFIX_DL3DV_Benchmark_ff592398657b3dfe94153332861985194a3e3c9d199c4a3a27a0ce4038e81ade_lr_24_train_24_frame_00320.png.png",
+          "sha256": "e3acd1aac7895858fb3f91c6f09f6aef61942077b14130594682c415e9f330ad"
+        }
+      }
+    },
+    "sculpture_frame_00335": {
+      "val_pair_line_1based": 681,
+      "scene_id": "ff592398657b3dfe94153332861985194a3e3c9d199c4a3a27a0ce4038e81ade",
+      "originals": {
+        "rendered_rgb.png": {
+          "path": "/data2/caoxiaodata/data/GeoQuery_training_data/DIFIX_DL3DV_Benchmark/ff592398657b3dfe94153332861985194a3e3c9d199c4a3a27a0ce4038e81ade/lr/24/train_24/frame_00335.png",
+          "sha256": "8a6777c72ee8ae8fa5e3979713b7d1d1b50f9599416b1e74607594aa948d6027"
+        },
+        "rendered_depth.npy": {
+          "path": "/data2/caoxiaodata/data/GeoQuery_training_data/DIFIX_DL3DV_Benchmark/ff592398657b3dfe94153332861985194a3e3c9d199c4a3a27a0ce4038e81ade/lr/24/rendered_depth/frame_00335.npy",
+          "sha256": "6846065715d98682b3d256fd3f99b51a69dbcefaff6ad7080b927b247d9d7010"
+        },
+        "da_teacher.npy": {
+          "path": "/data1/lilinwei/Depth-Prior-Optimization-for-SVGS/data/DAV2_depth_inverse/ff592398657b3dfe94153332861985194a3e3c9d199c4a3a27a0ce4038e81ade/rgb_gt/depth_npy/frame_00335.npy",
+          "sha256": "cbcfa6058332fbbea71066f476da4421dc5803c5bb83e019a1cbc5539a92c8cd"
+        },
+        "da_rendered.npy": {
+          "path": "/data1/lilinwei/Depth-Prior-Optimization-for-SVGS/data/DAV2_depth_inverse/ff592398657b3dfe94153332861985194a3e3c9d199c4a3a27a0ce4038e81ade/rgb_rendered/depth_npy/frame_00335.npy",
+          "sha256": "58ec4741df229be36d6b2898bb62cf7538454f0bedae063ce546a241a41fe332"
+        },
+        "da_teacher_original_vis.png": {
+          "path": "/data1/lilinwei/Depth-Prior-Optimization-for-SVGS/data/DAV2_depth_inverse/ff592398657b3dfe94153332861985194a3e3c9d199c4a3a27a0ce4038e81ade/rgb_gt/depth_vis/frame_00335_vis.png",
+          "sha256": "5307acf25c59207e232a1e6642cdec8f35f3a81b3fe2ade6da97513b5024cb1b"
+        },
+        "da_rendered_original_vis.png": {
+          "path": "/data1/lilinwei/Depth-Prior-Optimization-for-SVGS/data/DAV2_depth_inverse/ff592398657b3dfe94153332861985194a3e3c9d199c4a3a27a0ce4038e81ade/rgb_rendered/depth_vis/frame_00335_vis.png",
+          "sha256": "41bc52fe89596c4676deacf6e43e2402d5480898af6d6dbdef33b5736f9fc205"
+        },
+        "gt_rgb.png": {
+          "path": "/data2/caoxiaodata/data/scp/DL3DV-10K-Benchmark/ff592398657b3dfe94153332861985194a3e3c9d199c4a3a27a0ce4038e81ade/gaussian_splat/images_4/frame_00335.png",
+          "sha256": "3d8cd0d2f0b04efa9fa086e319cd87f8e9c1af12fb27e5e47fa329eed04cac78"
+        },
+        "pred_rgb_014000.png": {
+          "path": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/output/20261002_164657_train_rgbdepth_teacher_perimg/visualization/iter_014000/RGB+DepthCond_PerImg_Vis/_data2_caoxiaodata_data_GeoQuery_training_data_DIFIX_DL3DV_Benchmark_ff592398657b3dfe94153332861985194a3e3c9d199c4a3a27a0ce4038e81ade_lr_24_train_24_frame_00335.png_rgb.png",
+          "sha256": "cea6c7333cb199b2558b71e644cd8df2614caf4b0b78cd1a81de264fb53ba5e7"
+        },
+        "pred_depth_014000.npy": {
+          "path": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/output/20261002_164657_train_rgbdepth_teacher_perimg/visualization/iter_014000/RGB+DepthCond_PerImg_Vis/_data2_caoxiaodata_data_GeoQuery_training_data_DIFIX_DL3DV_Benchmark_ff592398657b3dfe94153332861985194a3e3c9d199c4a3a27a0ce4038e81ade_lr_24_train_24_frame_00335.png.npy",
+          "sha256": "502782c47357c8e6b2d218b04a5ca6ced80141a96981a3c5e2569d6beaad1062"
+        },
+        "pred_depth_014000_original.png": {
+          "path": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/output/20261002_164657_train_rgbdepth_teacher_perimg/visualization/iter_014000/RGB+DepthCond_PerImg_Vis/_data2_caoxiaodata_data_GeoQuery_training_data_DIFIX_DL3DV_Benchmark_ff592398657b3dfe94153332861985194a3e3c9d199c4a3a27a0ce4038e81ade_lr_24_train_24_frame_00335.png.png",
+          "sha256": "005585e6f1175d544ae7385125f692f7339d60ac7711ce9540eae2d27fb3c6cf"
+        }
+      }
+    },
+    "sculpture_frame_00355": {
+      "val_pair_line_1based": 701,
+      "scene_id": "ff592398657b3dfe94153332861985194a3e3c9d199c4a3a27a0ce4038e81ade",
+      "originals": {
+        "rendered_rgb.png": {
+          "path": "/data2/caoxiaodata/data/GeoQuery_training_data/DIFIX_DL3DV_Benchmark/ff592398657b3dfe94153332861985194a3e3c9d199c4a3a27a0ce4038e81ade/lr/24/train_24/frame_00355.png",
+          "sha256": "e52ce50a0b47a5c6b23b07f7da7a162bc10a24aff60a033abfc10ff00e1c8acd"
+        },
+        "rendered_depth.npy": {
+          "path": "/data2/caoxiaodata/data/GeoQuery_training_data/DIFIX_DL3DV_Benchmark/ff592398657b3dfe94153332861985194a3e3c9d199c4a3a27a0ce4038e81ade/lr/24/rendered_depth/frame_00355.npy",
+          "sha256": "8eb366a5f1f08279488575d503fcd1bd1d7afd9014eaf38f121a3cd5a095bd02"
+        },
+        "da_teacher.npy": {
+          "path": "/data1/lilinwei/Depth-Prior-Optimization-for-SVGS/data/DAV2_depth_inverse/ff592398657b3dfe94153332861985194a3e3c9d199c4a3a27a0ce4038e81ade/rgb_gt/depth_npy/frame_00355.npy",
+          "sha256": "f479bb2bd8752c044b16daa8f2f15bcd274f13945cd05532debb733db018343a"
+        },
+        "da_rendered.npy": {
+          "path": "/data1/lilinwei/Depth-Prior-Optimization-for-SVGS/data/DAV2_depth_inverse/ff592398657b3dfe94153332861985194a3e3c9d199c4a3a27a0ce4038e81ade/rgb_rendered/depth_npy/frame_00355.npy",
+          "sha256": "7fb8337fd9b18c635d6ed2bf55743a65cad5224942e1a04306b08453e486df6d"
+        },
+        "da_teacher_original_vis.png": {
+          "path": "/data1/lilinwei/Depth-Prior-Optimization-for-SVGS/data/DAV2_depth_inverse/ff592398657b3dfe94153332861985194a3e3c9d199c4a3a27a0ce4038e81ade/rgb_gt/depth_vis/frame_00355_vis.png",
+          "sha256": "cab49597f09e262a89080154f77d52da118e7ee35a8035a262b5feeacbba19cb"
+        },
+        "da_rendered_original_vis.png": {
+          "path": "/data1/lilinwei/Depth-Prior-Optimization-for-SVGS/data/DAV2_depth_inverse/ff592398657b3dfe94153332861985194a3e3c9d199c4a3a27a0ce4038e81ade/rgb_rendered/depth_vis/frame_00355_vis.png",
+          "sha256": "712764b7ec04910e4f131a7e1726b3db639b0fb99701114e65e14bfb5f6c5f3a"
+        },
+        "gt_rgb.png": {
+          "path": "/data2/caoxiaodata/data/scp/DL3DV-10K-Benchmark/ff592398657b3dfe94153332861985194a3e3c9d199c4a3a27a0ce4038e81ade/gaussian_splat/images_4/frame_00355.png",
+          "sha256": "cfd94ce4e15d73b6bf401b4e026614010b34a5f948608eca090b72b6bc401d07"
+        },
+        "pred_rgb_014000.png": {
+          "path": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/output/20261002_164657_train_rgbdepth_teacher_perimg/visualization/iter_014000/RGB+DepthCond_PerImg_Vis/_data2_caoxiaodata_data_GeoQuery_training_data_DIFIX_DL3DV_Benchmark_ff592398657b3dfe94153332861985194a3e3c9d199c4a3a27a0ce4038e81ade_lr_24_train_24_frame_00355.png_rgb.png",
+          "sha256": "5cac265586dfb51cd5ec906e776d6c16967f81c95692ab72b7c78778a396f4e3"
+        },
+        "pred_depth_014000.npy": {
+          "path": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/output/20261002_164657_train_rgbdepth_teacher_perimg/visualization/iter_014000/RGB+DepthCond_PerImg_Vis/_data2_caoxiaodata_data_GeoQuery_training_data_DIFIX_DL3DV_Benchmark_ff592398657b3dfe94153332861985194a3e3c9d199c4a3a27a0ce4038e81ade_lr_24_train_24_frame_00355.png.npy",
+          "sha256": "d9beb3dca97afb1e0a87b7415158a689c3067d4f02ae5dbb5b09bb792b19956b"
+        },
+        "pred_depth_014000_original.png": {
+          "path": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/output/20261002_164657_train_rgbdepth_teacher_perimg/visualization/iter_014000/RGB+DepthCond_PerImg_Vis/_data2_caoxiaodata_data_GeoQuery_training_data_DIFIX_DL3DV_Benchmark_ff592398657b3dfe94153332861985194a3e3c9d199c4a3a27a0ce4038e81ade_lr_24_train_24_frame_00355.png.png",
+          "sha256": "d23be69471fe599c2e9531b3bab660e25526b9f55bfa743ee24f21d36353095d"
+        }
+      }
+    }
+  },
+  "note": "Source files are byte-for-byte copies; colored depth and mosaics are derivatives."
+}

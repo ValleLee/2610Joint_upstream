@@ -1,0 +1,10 @@
+{
+  "sample_count": 100,
+  "joint_teacher_wins": 22,
+  "da_rendered_wins": 78,
+  "mean_da_rendered_nrmse": 0.09150735394541114,
+  "mean_joint_teacher_nrmse": 0.1240355851295311,
+  "median_da_rendered_nrmse": 0.032408562990767026,
+  "median_joint_teacher_nrmse": 0.08348221322883095,
+  "protocol": "100 saved validation visualizations at iter 14000; DA(GT RGB) proxy; 432x768; common valid mask; least-squares scale/shift alignment of DA(rendered RGB); saved JointTeacher NPY already teacher-aligned; RMSE divided by teacher q99-q1 per image"
+}

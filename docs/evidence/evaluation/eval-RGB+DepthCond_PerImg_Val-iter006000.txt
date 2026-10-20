@@ -1,0 +1,7 @@
+Evaluation metrics:
+     on dataset: RGB+DepthCond_PerImg_Val
+     over samples in: /data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/data/pairs/k24_ratio100_val2_ignore/val_pairs.txt
+-------------------  ------------------  -------------------
+joint_latent_mse     rgb_latent_mse      depth_latent_mse
+0.21334457316181876  0.2826915204785504  0.14399762569399147
+-------------------  ------------------  -------------------

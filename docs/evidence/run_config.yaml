@@ -1,0 +1,198 @@
+logging:
+  filename: logging.log
+  format: ' %(asctime)s - %(levelname)s -%(filename)s - %(funcName)s >> %(message)s'
+  console_level: 20
+  file_level: 10
+wandb:
+  project: marigold
+model:
+  name: marigold_pipeline
+  pretrained_path: checkpoints/marigold-depth-v1-0
+  latent_scale_factor: 0.18215
+base_config:
+- config/logging.yaml
+- config/wandb.yaml
+- config/model_marigold.yaml
+lr: 3.0e-05
+max_epoch: 10000
+max_iter: 15000
+save_period: 1000
+validation_period: 1000
+visualization_period: 1000
+seed: 2024
+gt_depth_type: teacher_target_norm
+gt_mask_type: valid_mask_raw
+data_root: .
+dataset:
+  data_root: .
+  train:
+    name: rgb_invdepth_teacher
+    dir: /data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/data/pairs/k24_ratio100_val2_ignore
+    input_name: rgb
+    gt_name: depth
+    filenames: train_pairs.txt
+    disp_name: RGB+DepthCond_PerImg_Train
+    min_depth: 0.0
+    max_depth: 1.0
+    has_filled_depth: false
+    condition_from_depth: true
+    teacher_from_depth: true
+    condition_representation: depth
+    teacher_representation: depth
+    name_mode: stem
+    resize_to_hw:
+    - 432
+    - 768
+  val:
+  - name: rgb_invdepth_teacher
+    dir: /data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/data/pairs/k24_ratio100_val2_ignore
+    input_name: rgb
+    gt_name: depth
+    filenames: val_pairs.txt
+    disp_name: RGB+DepthCond_PerImg_Val
+    min_depth: 0.0
+    max_depth: 1.0
+    has_filled_depth: false
+    condition_from_depth: true
+    teacher_from_depth: true
+    condition_representation: depth
+    teacher_representation: depth
+    name_mode: stem
+    resize_to_hw:
+    - 432
+    - 768
+  vis:
+  - name: rgb_invdepth_teacher
+    dir: /data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/data/pairs/k24_ratio100_val2_ignore
+    input_name: rgb
+    gt_name: depth
+    filenames: val_pairs.txt
+    disp_name: RGB+DepthCond_PerImg_Vis
+    min_depth: 0.0
+    max_depth: 1.0
+    has_filled_depth: false
+    condition_from_depth: true
+    teacher_from_depth: true
+    condition_representation: depth
+    teacher_representation: depth
+    name_mode: stem
+    resize_to_hw:
+    - 432
+    - 768
+  depth:
+    scale: 1.0
+    invalid_val: 0
+    min_depth: 0.0
+    max_depth: 1.0
+train:
+  lr: 3.0e-05
+  max_iter: 15000
+  save_period: 1000
+  validation_period: 1000
+  visualization_period: 1000
+  seed: 2024
+dataloader:
+  effective_batch_size: 32
+  max_train_batch_size: 4
+  num_workers: 8
+  seed: 2024
+  pin_memory: true
+  persistent_workers: true
+  amp: fp16
+  grad_checkpointing: true
+depth_normalization:
+  type: scale_shift_depth
+  clip: true
+  norm_min: -1.0
+  norm_max: 1.0
+  min_max_quantile: 0.01
+augmentation:
+  lr_flip_p: 0.5
+pipeline:
+  name: MarigoldDepthPipeline
+  kwargs:
+    scale_invariant: true
+    shift_invariant: true
+    default_denoising_steps: 4
+    default_processing_resolution: 768
+trainer:
+  name: MarigoldDepthTrainerEarlyStop
+  training_noise_scheduler:
+    pretrained_path: checkpoints/marigold-depth-v1-0
+  init_seed: 2024
+  save_period: 1000
+  validation_period: 1000
+  visualization_period: 1000
+  early_validation_period: 500
+  early_visualization_period: 500
+  schedule_switch_iter: 6000
+  backup_period: 2000
+  unet_in_channels: 12
+  early_stopping:
+    enabled: true
+    start_iter: 10000
+    patience: 5
+    min_delta: 5.0e-05
+    goal: minimize
+visualization:
+  head_samples: 50
+  tail_samples: 50
+multi_res_noise:
+  strength: 0.8
+  annealed: true
+  downscale_strategy: original
+loss:
+  name: mse_loss
+  kwargs:
+    reduction: mean
+optimizer:
+  name: Adam
+lr_scheduler:
+  name: IterExponential
+  kwargs:
+    total_iter: 18000
+    final_ratio: 0.01
+    warmup_steps: 200
+validation:
+  denoising_steps: 4
+  ensemble_size: 1
+  processing_res: 0
+  match_input_res: false
+  target_representation: depth
+  clip_to_dataset_range: false
+  resample_method: bilinear
+  log_main_metric_only: false
+  main_val_metric: joint_latent_mse
+  main_val_metric_goal: minimize
+  init_seed: 2024
+eval:
+  alignment: least_square
+  align_max_res: null
+  eval_metrics:
+  - abs_relative_difference
+  - rmse_linear
+runtime:
+  base_data_dir: /data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher
+  base_ckpt_dir: /data1/lilinwei
+  pairs_dir_env: /data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/data/pairs/k24_ratio100_val2_ignore
+  pairs_dir_rel: /data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/data/pairs/k24_ratio100_val2_ignore
+  pairs_dir_abs: /data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/data/pairs/k24_ratio100_val2_ignore
+  train_pairs_txt: /data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/data/pairs/k24_ratio100_val2_ignore/train_pairs.txt
+  val_pairs_txt: /data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/data/pairs/k24_ratio100_val2_ignore/val_pairs.txt
+  pairs_report_json: /data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/data/pairs/k24_ratio100_val2_ignore/report.json
+  pairs_report_args: null
+  pairs_scene_counts: null
+  pairs_splits: null
+  env:
+    CUDA_VISIBLE_DEVICES: 4,5,6,7
+    MAX_ITER: '15000'
+    SAVE_PERIOD: '1000'
+    VAL_PERIOD: '1000'
+    VIS_PERIOD: '1000'
+    BACKUP_PERIOD: '2000'
+    WARMUP_STEPS: '200'
+    VAL_DENOISE_STEPS: '4'
+    RESIZE_H: '432'
+    RESIZE_W: '768'
+    DEFAULT_PROC_RES: '768'
+    PAIRS_DIR: /data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/data/pairs/k24_ratio100_val2_ignore

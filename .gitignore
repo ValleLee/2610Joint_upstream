@@ -1,0 +1,23 @@
+# Local datasets, model weights, and generated runs
+output/
+logs/
+checkpoints/
+data/pairs/local/
+data/raw/
+data/scenes/
+wandb/
+*.ckpt
+*.pth
+*.pt
+*.safetensors
+
+# Python and editor artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+.env
+.DS_Store

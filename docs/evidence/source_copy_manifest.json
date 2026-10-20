@@ -1,0 +1,1427 @@
+{
+  "source_project": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher",
+  "run": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/output/20261002_164657_train_rgbdepth_teacher_perimg",
+  "package_root": "/data1/lilinwei/code/2610JointGSO",
+  "file_count": 177,
+  "identical_to_origin": 162,
+  "modified_from_origin": 9,
+  "new_files": 6,
+  "files": [
+    {
+      "path": ".gitignore",
+      "size_bytes": 282,
+      "package_sha256": "d67ca2547167ce54679b5293f9d6951d6e7d2e7921f1c1b17838bc9303fa8e3f",
+      "origin": null,
+      "origin_sha256": null,
+      "content_match": null
+    },
+    {
+      "path": "EXPERIMENT_20261002_JOINT_RGB_DEPTH.md",
+      "size_bytes": 7991,
+      "package_sha256": "085b92ad1041d7db1c4c7ed5fb0d0adfd2c5958b486f7a09c793d0264567fe6e",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/EXPERIMENT_20261002_JOINT_RGB_DEPTH.md",
+      "origin_sha256": "d1e1ac768bd12dfe9582efaf0788904450f46c6cc5327ca2c599781278cea0ff",
+      "content_match": false
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 4480,
+      "package_sha256": "dbf97d81eedbe1b735c181e842397f2c2c8ffb7ebc350c70fcdd1d7b6dc41a7b",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/README.md",
+      "origin_sha256": "bc753cb0587ab9dee218ce4d83fcaa72c93382661e05807575a249159f64265a",
+      "content_match": false
+    },
+    {
+      "path": "config/logging.yaml",
+      "size_bytes": 155,
+      "package_sha256": "87ae3bf623510b33c236c9bc082ecfb9dd58e277e02516a4a31639b663849faa",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/config/logging.yaml",
+      "origin_sha256": "87ae3bf623510b33c236c9bc082ecfb9dd58e277e02516a4a31639b663849faa",
+      "content_match": true
+    },
+    {
+      "path": "config/model_marigold.yaml",
+      "size_bytes": 114,
+      "package_sha256": "3a2443c1b63fc70e6d8e2726d3550b94e0511a29bb11e3e99e0e53b73471d3aa",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/config/model_marigold.yaml",
+      "origin_sha256": "3a2443c1b63fc70e6d8e2726d3550b94e0511a29bb11e3e99e0e53b73471d3aa",
+      "content_match": true
+    },
+    {
+      "path": "config/train_rgbdepth_teacher_perimg.yaml",
+      "size_bytes": 4960,
+      "package_sha256": "3c1b5bbed75ee798f2dc935808f8bd2b3d5e2dbfe8d1538d71cf7df2ecb1263a",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/config/train_rgbdepth_teacher_perimg.yaml",
+      "origin_sha256": "3c1b5bbed75ee798f2dc935808f8bd2b3d5e2dbfe8d1538d71cf7df2ecb1263a",
+      "content_match": true
+    },
+    {
+      "path": "config/wandb.yaml",
+      "size_bytes": 51,
+      "package_sha256": "a933f5f8b93ec5c69594812e26809f64cec64a5df3a0c2bf510fb0accbc9dec0",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/config/wandb.yaml",
+      "origin_sha256": "a933f5f8b93ec5c69594812e26809f64cec64a5df3a0c2bf510fb0accbc9dec0",
+      "content_match": true
+    },
+    {
+      "path": "data/README.md",
+      "size_bytes": 1220,
+      "package_sha256": "9ac38f247ca0374cbc214fee1c530577baa8dbe7cb420308bdf7ca428303595d",
+      "origin": null,
+      "origin_sha256": null,
+      "content_match": null
+    },
+    {
+      "path": "data/pairs/k24_ratio100_val2_ignore/train_pairs.txt",
+      "size_bytes": 30586466,
+      "package_sha256": "e6a27f26e021956cffa84332b9b3142d711eccd24bc07d4a17610c9d6a656cb6",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/data/pairs/k24_ratio100_val2_ignore/train_pairs.txt",
+      "origin_sha256": "e6a27f26e021956cffa84332b9b3142d711eccd24bc07d4a17610c9d6a656cb6",
+      "content_match": true
+    },
+    {
+      "path": "data/pairs/k24_ratio100_val2_ignore/val_pairs.txt",
+      "size_bytes": 600269,
+      "package_sha256": "593ca42cc6f5a6e9d551ef44f0c58f650c41e5c87abc9368d689c8ba6db79113",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/data/pairs/k24_ratio100_val2_ignore/val_pairs.txt",
+      "origin_sha256": "593ca42cc6f5a6e9d551ef44f0c58f650c41e5c87abc9368d689c8ba6db79113",
+      "content_match": true
+    },
+    {
+      "path": "docs/README.md",
+      "size_bytes": 3260,
+      "package_sha256": "f009975df651534df79a11245159588b97c6ab5173e3d00ffbe8049bebabde53",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/README.md",
+      "origin_sha256": "47bb26da3770f9d7c9e4c5d6746e915e2d57fa2bad64261923f7b77a55c463ec",
+      "content_match": false
+    },
+    {
+      "path": "docs/SOURCE_PROVENANCE.md",
+      "size_bytes": 2759,
+      "package_sha256": "df8e08453c3d75e957625f03659e35df4ec37611857854620d4719f44103c555",
+      "origin": null,
+      "origin_sha256": null,
+      "content_match": null
+    },
+    {
+      "path": "docs/build_figures.py",
+      "size_bytes": 14969,
+      "package_sha256": "a16a246bc986fe2b7102f786d359f8c588003f271dc6d0bdec03e3d8a3b796c5",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/build_figures.py",
+      "origin_sha256": "90fa3dceaea0f4cc3ad9118d5f12ad9df2fd92e1ac4e76487b157b5ab953b1e7",
+      "content_match": false
+    },
+    {
+      "path": "docs/evaluate_da_comparison.py",
+      "size_bytes": 5180,
+      "package_sha256": "5b265e6872ddc46e8107711489b1d34b86ed06bbb0630b39ef286f5e32ab2985",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/evaluate_da_comparison.py",
+      "origin_sha256": "39b7b209397ff322c9f21585880f6275199b96ebb5ac77fe33f0d2ecb3e6f266",
+      "content_match": false
+    },
+    {
+      "path": "docs/evidence/da_comparison_100.csv",
+      "size_bytes": 16853,
+      "package_sha256": "44c35ea65b8ceb8726707b71ec6aeced28ad0ecdf01fbefbc75db6266fed61fa",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/evidence/da_comparison_100.csv",
+      "origin_sha256": "44c35ea65b8ceb8726707b71ec6aeced28ad0ecdf01fbefbc75db6266fed61fa",
+      "content_match": true
+    },
+    {
+      "path": "docs/evidence/da_comparison_100_summary.json",
+      "size_bytes": 544,
+      "package_sha256": "452f6ca02605d294c3882bf475355d0ec2dc4033b229103aed0ebbff7d6301e9",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/evidence/da_comparison_100_summary.json",
+      "origin_sha256": "452f6ca02605d294c3882bf475355d0ec2dc4033b229103aed0ebbff7d6301e9",
+      "content_match": true
+    },
+    {
+      "path": "docs/evidence/evaluation/eval-RGB+DepthCond_PerImg_Val-iter000500.txt",
+      "size_bytes": 430,
+      "package_sha256": "3f3ce19e53622582db44d5b68c662284942d2fd126c5a6b2b5be25e1c3792bb0",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/evidence/evaluation/eval-RGB+DepthCond_PerImg_Val-iter000500.txt",
+      "origin_sha256": "3f3ce19e53622582db44d5b68c662284942d2fd126c5a6b2b5be25e1c3792bb0",
+      "content_match": true
+    },
+    {
+      "path": "docs/evidence/evaluation/eval-RGB+DepthCond_PerImg_Val-iter001000.txt",
+      "size_bytes": 436,
+      "package_sha256": "10cf6bdbe86f7442dc86910db60f09275ec02879d12125eba4bad308bb63ec90",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/evidence/evaluation/eval-RGB+DepthCond_PerImg_Val-iter001000.txt",
+      "origin_sha256": "10cf6bdbe86f7442dc86910db60f09275ec02879d12125eba4bad308bb63ec90",
+      "content_match": true
+    },
+    {
+      "path": "docs/evidence/evaluation/eval-RGB+DepthCond_PerImg_Val-iter001500.txt",
+      "size_bytes": 440,
+      "package_sha256": "858517edca0a2225352e5f7f6eb3a4da49d7e237d7783355907ffb333a836c1b",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/evidence/evaluation/eval-RGB+DepthCond_PerImg_Val-iter001500.txt",
+      "origin_sha256": "858517edca0a2225352e5f7f6eb3a4da49d7e237d7783355907ffb333a836c1b",
+      "content_match": true
+    },
+    {
+      "path": "docs/evidence/evaluation/eval-RGB+DepthCond_PerImg_Val-iter002000.txt",
+      "size_bytes": 436,
+      "package_sha256": "d88e12f340d249efa82ba53ae4a440bcf839efa4474fdb7af6aad0b5189d6d07",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/evidence/evaluation/eval-RGB+DepthCond_PerImg_Val-iter002000.txt",
+      "origin_sha256": "d88e12f340d249efa82ba53ae4a440bcf839efa4474fdb7af6aad0b5189d6d07",
+      "content_match": true
+    },
+    {
+      "path": "docs/evidence/evaluation/eval-RGB+DepthCond_PerImg_Val-iter002500.txt",
+      "size_bytes": 448,
+      "package_sha256": "49aa8fb24e8f161efdc95d2d81f8aaeaee5d80c7628bc4387483c96f706eaa9b",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/evidence/evaluation/eval-RGB+DepthCond_PerImg_Val-iter002500.txt",
+      "origin_sha256": "49aa8fb24e8f161efdc95d2d81f8aaeaee5d80c7628bc4387483c96f706eaa9b",
+      "content_match": true
+    },
+    {
+      "path": "docs/evidence/evaluation/eval-RGB+DepthCond_PerImg_Val-iter003000.txt",
+      "size_bytes": 448,
+      "package_sha256": "740ebff39e1f395c365933bbbed84bf3441661cf06c8653a45fdc91ca2f94f6b",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/evidence/evaluation/eval-RGB+DepthCond_PerImg_Val-iter003000.txt",
+      "origin_sha256": "740ebff39e1f395c365933bbbed84bf3441661cf06c8653a45fdc91ca2f94f6b",
+      "content_match": true
+    },
+    {
+      "path": "docs/evidence/evaluation/eval-RGB+DepthCond_PerImg_Val-iter003500.txt",
+      "size_bytes": 441,
+      "package_sha256": "5aa2aa2157b3e86f6c1114310f67ad5ab3f41fba4fd0d11cb016bf92dffe718f",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/evidence/evaluation/eval-RGB+DepthCond_PerImg_Val-iter003500.txt",
+      "origin_sha256": "5aa2aa2157b3e86f6c1114310f67ad5ab3f41fba4fd0d11cb016bf92dffe718f",
+      "content_match": true
+    },
+    {
+      "path": "docs/evidence/evaluation/eval-RGB+DepthCond_PerImg_Val-iter004000.txt",
+      "size_bytes": 441,
+      "package_sha256": "a6311288b1428938a542fa6f0fae7419acd803b04a1d19e690a9130cc08dbfa7",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/evidence/evaluation/eval-RGB+DepthCond_PerImg_Val-iter004000.txt",
+      "origin_sha256": "a6311288b1428938a542fa6f0fae7419acd803b04a1d19e690a9130cc08dbfa7",
+      "content_match": true
+    },
+    {
+      "path": "docs/evidence/evaluation/eval-RGB+DepthCond_PerImg_Val-iter004500.txt",
+      "size_bytes": 444,
+      "package_sha256": "1187d3a385f8989deea3fb05bab1d0f48c9a8408fea5a27fc5aeb8087f667874",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/evidence/evaluation/eval-RGB+DepthCond_PerImg_Val-iter004500.txt",
+      "origin_sha256": "1187d3a385f8989deea3fb05bab1d0f48c9a8408fea5a27fc5aeb8087f667874",
+      "content_match": true
+    },
+    {
+      "path": "docs/evidence/evaluation/eval-RGB+DepthCond_PerImg_Val-iter005000.txt",
+      "size_bytes": 441,
+      "package_sha256": "10442463e123cb1c31ddf8e5280c8921241d68b2c98bbdfcb0c3a40724aca426",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/evidence/evaluation/eval-RGB+DepthCond_PerImg_Val-iter005000.txt",
+      "origin_sha256": "10442463e123cb1c31ddf8e5280c8921241d68b2c98bbdfcb0c3a40724aca426",
+      "content_match": true
+    },
+    {
+      "path": "docs/evidence/evaluation/eval-RGB+DepthCond_PerImg_Val-iter005500.txt",
+      "size_bytes": 448,
+      "package_sha256": "a72a44e8b39842ce37357590940af68067f43595e6dc1284c2b23826ad95e728",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/evidence/evaluation/eval-RGB+DepthCond_PerImg_Val-iter005500.txt",
+      "origin_sha256": "a72a44e8b39842ce37357590940af68067f43595e6dc1284c2b23826ad95e728",
+      "content_match": true
+    },
+    {
+      "path": "docs/evidence/evaluation/eval-RGB+DepthCond_PerImg_Val-iter006000.txt",
+      "size_bytes": 444,
+      "package_sha256": "d3d8cc03807c2a9205bb5665c0b86f7a15d00c8caaee00b742adf2bfd96b5c8d",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/evidence/evaluation/eval-RGB+DepthCond_PerImg_Val-iter006000.txt",
+      "origin_sha256": "d3d8cc03807c2a9205bb5665c0b86f7a15d00c8caaee00b742adf2bfd96b5c8d",
+      "content_match": true
+    },
+    {
+      "path": "docs/evidence/evaluation/eval-RGB+DepthCond_PerImg_Val-iter007000.txt",
+      "size_bytes": 448,
+      "package_sha256": "aea35b774de0a3baf03089abaaaf38bee77ab84cada918f8bf4791dd2ec4c438",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/evidence/evaluation/eval-RGB+DepthCond_PerImg_Val-iter007000.txt",
+      "origin_sha256": "aea35b774de0a3baf03089abaaaf38bee77ab84cada918f8bf4791dd2ec4c438",
+      "content_match": true
+    },
+    {
+      "path": "docs/evidence/evaluation/eval-RGB+DepthCond_PerImg_Val-iter008000.txt",
+      "size_bytes": 444,
+      "package_sha256": "ab787fb8c56f5be7814c4a369f8cf57338776ed4a465d7ed10119eb553696ebf",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/evidence/evaluation/eval-RGB+DepthCond_PerImg_Val-iter008000.txt",
+      "origin_sha256": "ab787fb8c56f5be7814c4a369f8cf57338776ed4a465d7ed10119eb553696ebf",
+      "content_match": true
+    },
+    {
+      "path": "docs/evidence/evaluation/eval-RGB+DepthCond_PerImg_Val-iter009000.txt",
+      "size_bytes": 444,
+      "package_sha256": "dc17bd996aaec71ae6f591818d756fec1bd5b9e9177a2ba42cdf19f4a46f4e6f",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/evidence/evaluation/eval-RGB+DepthCond_PerImg_Val-iter009000.txt",
+      "origin_sha256": "dc17bd996aaec71ae6f591818d756fec1bd5b9e9177a2ba42cdf19f4a46f4e6f",
+      "content_match": true
+    },
+    {
+      "path": "docs/evidence/evaluation/eval-RGB+DepthCond_PerImg_Val-iter010000.txt",
+      "size_bytes": 444,
+      "package_sha256": "53beaeacfe9e76445830ae41e8d739f683d6d873e0e1845290bb67370cd9985f",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/evidence/evaluation/eval-RGB+DepthCond_PerImg_Val-iter010000.txt",
+      "origin_sha256": "53beaeacfe9e76445830ae41e8d739f683d6d873e0e1845290bb67370cd9985f",
+      "content_match": true
+    },
+    {
+      "path": "docs/evidence/evaluation/eval-RGB+DepthCond_PerImg_Val-iter011000.txt",
+      "size_bytes": 445,
+      "package_sha256": "5c4185046f2112b2449b118f405f9d9d065de6dfe6ce92c416c2e3bef0867751",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/evidence/evaluation/eval-RGB+DepthCond_PerImg_Val-iter011000.txt",
+      "origin_sha256": "5c4185046f2112b2449b118f405f9d9d065de6dfe6ce92c416c2e3bef0867751",
+      "content_match": true
+    },
+    {
+      "path": "docs/evidence/evaluation/eval-RGB+DepthCond_PerImg_Val-iter012000.txt",
+      "size_bytes": 440,
+      "package_sha256": "c66be8162a106bc6a80327af4d686e859ffd3ddb530fae8d458db6c28cd53bef",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/evidence/evaluation/eval-RGB+DepthCond_PerImg_Val-iter012000.txt",
+      "origin_sha256": "c66be8162a106bc6a80327af4d686e859ffd3ddb530fae8d458db6c28cd53bef",
+      "content_match": true
+    },
+    {
+      "path": "docs/evidence/evaluation/eval-RGB+DepthCond_PerImg_Val-iter013000.txt",
+      "size_bytes": 441,
+      "package_sha256": "bb8d4de954b246e5b68ba5c05d3de7076f7f83ea3ab931a5b070170fadcb0eb6",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/evidence/evaluation/eval-RGB+DepthCond_PerImg_Val-iter013000.txt",
+      "origin_sha256": "bb8d4de954b246e5b68ba5c05d3de7076f7f83ea3ab931a5b070170fadcb0eb6",
+      "content_match": true
+    },
+    {
+      "path": "docs/evidence/evaluation/eval-RGB+DepthCond_PerImg_Val-iter014000.txt",
+      "size_bytes": 444,
+      "package_sha256": "cab08bc15722e18821d121b08913d9f99f40befdcd2a3e830ab0805bca73a976",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/evidence/evaluation/eval-RGB+DepthCond_PerImg_Val-iter014000.txt",
+      "origin_sha256": "cab08bc15722e18821d121b08913d9f99f40befdcd2a3e830ab0805bca73a976",
+      "content_match": true
+    },
+    {
+      "path": "docs/evidence/evaluation/eval-RGB+DepthCond_PerImg_Val-iter015000.txt",
+      "size_bytes": 441,
+      "package_sha256": "c71747e9ded21c0c1c13814c8e97e9df81d13b5bb158297418e93c9c497788bd",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/evidence/evaluation/eval-RGB+DepthCond_PerImg_Val-iter015000.txt",
+      "origin_sha256": "c71747e9ded21c0c1c13814c8e97e9df81d13b5bb158297418e93c9c497788bd",
+      "content_match": true
+    },
+    {
+      "path": "docs/evidence/provenance.json",
+      "size_bytes": 24047,
+      "package_sha256": "861691688b2fc6b9fdd891a473de06240be4cf8b43023b3dca2b9f5fd9b141b8",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/evidence/provenance.json",
+      "origin_sha256": "861691688b2fc6b9fdd891a473de06240be4cf8b43023b3dca2b9f5fd9b141b8",
+      "content_match": true
+    },
+    {
+      "path": "docs/evidence/run_config.yaml",
+      "size_bytes": 5474,
+      "package_sha256": "5280bd0ba44b5009819e42f3480e66c471b569bcbd4ffebb0721a38d75c6b740",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/evidence/run_config.yaml",
+      "origin_sha256": "5280bd0ba44b5009819e42f3480e66c471b569bcbd4ffebb0721a38d75c6b740",
+      "content_match": true
+    },
+    {
+      "path": "docs/evidence/run_logging.log",
+      "size_bytes": 1686319,
+      "package_sha256": "2b1548e86e64f53bd985f210a54f366b51155fa5390e1ca04e1c5993269c86f6",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/output/20261002_164657_train_rgbdepth_teacher_perimg/logging.log",
+      "origin_sha256": "2b1548e86e64f53bd985f210a54f366b51155fa5390e1ca04e1c5993269c86f6",
+      "content_match": true
+    },
+    {
+      "path": "docs/evidence/scheduler_config_iter014000.json",
+      "size_bytes": 533,
+      "package_sha256": "b27c3815e984ba74e1ff2fba6ba41d312f9a3dc2921077a0c056b4bc5e11bf72",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/evidence/scheduler_config_iter014000.json",
+      "origin_sha256": "b27c3815e984ba74e1ff2fba6ba41d312f9a3dc2921077a0c056b4bc5e11bf72",
+      "content_match": true
+    },
+    {
+      "path": "docs/evidence/tensorboard/events.out.tfevents.1790930818.amax.3847178.0",
+      "size_bytes": 2179999,
+      "package_sha256": "e9cc97dceea12b5e11381263060061aa66033d83a541816353563ceae2801616",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/output/20261002_164657_train_rgbdepth_teacher_perimg/tensorboard/events.out.tfevents.1790930818.amax.3847178.0",
+      "origin_sha256": "e9cc97dceea12b5e11381263060061aa66033d83a541816353563ceae2801616",
+      "content_match": true
+    },
+    {
+      "path": "docs/evidence/validation_metrics.csv",
+      "size_bytes": 1419,
+      "package_sha256": "fc20e13a0b34bc835adfd4cde805cde39d8ff2a27d9f20789780414bb475afbf",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/evidence/validation_metrics.csv",
+      "origin_sha256": "fc20e13a0b34bc835adfd4cde805cde39d8ff2a27d9f20789780414bb475afbf",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/garden_depth.png",
+      "size_bytes": 3129184,
+      "package_sha256": "c7068c6a1762df3a039764ce5731b9123430f4876f7ab666afc765190b7bf612",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/garden_depth.png",
+      "origin_sha256": "c7068c6a1762df3a039764ce5731b9123430f4876f7ab666afc765190b7bf612",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/garden_depth_vs_da.png",
+      "size_bytes": 3509507,
+      "package_sha256": "92aa11bddf3686350b963b9f94998658fd6412c6b7f3634d22424010256b9a46",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/garden_depth_vs_da.png",
+      "origin_sha256": "92aa11bddf3686350b963b9f94998658fd6412c6b7f3634d22424010256b9a46",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/garden_rgb.png",
+      "size_bytes": 4472756,
+      "package_sha256": "36553c8b3b0f43aac14992f4b44027adc5e38f35c4fa6265c2817df7cab048d8",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/garden_rgb.png",
+      "origin_sha256": "36553c8b3b0f43aac14992f4b44027adc5e38f35c4fa6265c2817df7cab048d8",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/panels/garden_frame_00002/da_rendered_shared.png",
+      "size_bytes": 148220,
+      "package_sha256": "3127bcf9515804cb4e287b1657d544af83c56ffcf846bd28e7282057ee03b906",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/panels/garden_frame_00002/da_rendered_shared.png",
+      "origin_sha256": "3127bcf9515804cb4e287b1657d544af83c56ffcf846bd28e7282057ee03b906",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/panels/garden_frame_00002/da_teacher_shared.png",
+      "size_bytes": 249567,
+      "package_sha256": "b3ab45c5f58e489fac9562b317bb4a6d8d7d24a4748ec5b6f8b15eba6ec86c4f",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/panels/garden_frame_00002/da_teacher_shared.png",
+      "origin_sha256": "b3ab45c5f58e489fac9562b317bb4a6d8d7d24a4748ec5b6f8b15eba6ec86c4f",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/panels/garden_frame_00002/processed_shared.png",
+      "size_bytes": 237006,
+      "package_sha256": "3fed8fa8e9b078deac595dcd220fc1a78585d4f5a31ace4936ce31ff4f753580",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/panels/garden_frame_00002/processed_shared.png",
+      "origin_sha256": "3fed8fa8e9b078deac595dcd220fc1a78585d4f5a31ace4936ce31ff4f753580",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/panels/garden_frame_00002/rendered_inverse_shared.png",
+      "size_bytes": 745440,
+      "package_sha256": "5dd39eb6b6fe5153dd1ae5646e58ebf64ba08ff2b951b40f72fdfb759d5269b2",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/panels/garden_frame_00002/rendered_inverse_shared.png",
+      "origin_sha256": "5dd39eb6b6fe5153dd1ae5646e58ebf64ba08ff2b951b40f72fdfb759d5269b2",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/panels/garden_frame_00021/da_rendered_shared.png",
+      "size_bytes": 69014,
+      "package_sha256": "bd07780daa72ec9afc9371b0de3d2c3ec1f1ab5b700287ec15dd02d0dcd7ebe7",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/panels/garden_frame_00021/da_rendered_shared.png",
+      "origin_sha256": "bd07780daa72ec9afc9371b0de3d2c3ec1f1ab5b700287ec15dd02d0dcd7ebe7",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/panels/garden_frame_00021/da_teacher_shared.png",
+      "size_bytes": 354257,
+      "package_sha256": "7f1000ffe4a389b4e947ca8341276e4dbddea2c47075f360c66c62917e958628",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/panels/garden_frame_00021/da_teacher_shared.png",
+      "origin_sha256": "7f1000ffe4a389b4e947ca8341276e4dbddea2c47075f360c66c62917e958628",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/panels/garden_frame_00021/processed_shared.png",
+      "size_bytes": 291065,
+      "package_sha256": "ca3ec6fd5ab643bdbd0916abfb0a96f276b728c8ad0100b234b5f34582bed00f",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/panels/garden_frame_00021/processed_shared.png",
+      "origin_sha256": "ca3ec6fd5ab643bdbd0916abfb0a96f276b728c8ad0100b234b5f34582bed00f",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/panels/garden_frame_00021/rendered_inverse_shared.png",
+      "size_bytes": 537676,
+      "package_sha256": "445dfafc4bab1bc9360d7c8b6c51275fcf7868e72f34faf499f172239583d02e",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/panels/garden_frame_00021/rendered_inverse_shared.png",
+      "origin_sha256": "445dfafc4bab1bc9360d7c8b6c51275fcf7868e72f34faf499f172239583d02e",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/panels/garden_frame_00041/da_rendered_shared.png",
+      "size_bytes": 91413,
+      "package_sha256": "a2b97829f6c823456d7e4f59a54420fc39ed9154a5cdeeaa7c06512a534ac4a0",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/panels/garden_frame_00041/da_rendered_shared.png",
+      "origin_sha256": "a2b97829f6c823456d7e4f59a54420fc39ed9154a5cdeeaa7c06512a534ac4a0",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/panels/garden_frame_00041/da_teacher_shared.png",
+      "size_bytes": 259566,
+      "package_sha256": "981ef025db2c259833272d22809d1744d55d016aa1db00c8e04c25df8721246b",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/panels/garden_frame_00041/da_teacher_shared.png",
+      "origin_sha256": "981ef025db2c259833272d22809d1744d55d016aa1db00c8e04c25df8721246b",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/panels/garden_frame_00041/processed_shared.png",
+      "size_bytes": 222107,
+      "package_sha256": "aaba641627ca710ca9c2c6764e7456392f54b0e0f7436f0bc46068c72ff4b948",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/panels/garden_frame_00041/processed_shared.png",
+      "origin_sha256": "aaba641627ca710ca9c2c6764e7456392f54b0e0f7436f0bc46068c72ff4b948",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/panels/garden_frame_00041/rendered_inverse_shared.png",
+      "size_bytes": 653301,
+      "package_sha256": "ecd11016ee2c61e167a5303c7ede652489f44cf77805180eb5d51aaf9ae4d1a1",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/panels/garden_frame_00041/rendered_inverse_shared.png",
+      "origin_sha256": "ecd11016ee2c61e167a5303c7ede652489f44cf77805180eb5d51aaf9ae4d1a1",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/panels/sculpture_frame_00320/da_rendered_shared.png",
+      "size_bytes": 60184,
+      "package_sha256": "36e40967943d56cd56bcc38030ad840f924f6b38ef03ddceafcbedc68a7216d7",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/panels/sculpture_frame_00320/da_rendered_shared.png",
+      "origin_sha256": "36e40967943d56cd56bcc38030ad840f924f6b38ef03ddceafcbedc68a7216d7",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/panels/sculpture_frame_00320/da_teacher_shared.png",
+      "size_bytes": 73214,
+      "package_sha256": "ecc711b9cb0b672d409fd92e5dd4c1e65bc9004b12a93a90d658d5b642bcbb9f",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/panels/sculpture_frame_00320/da_teacher_shared.png",
+      "origin_sha256": "ecc711b9cb0b672d409fd92e5dd4c1e65bc9004b12a93a90d658d5b642bcbb9f",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/panels/sculpture_frame_00320/processed_shared.png",
+      "size_bytes": 143145,
+      "package_sha256": "687400baaa650e776dec140c48ffdc075255c4e56ed8ab34a72a9bcfb9bb8bc8",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/panels/sculpture_frame_00320/processed_shared.png",
+      "origin_sha256": "687400baaa650e776dec140c48ffdc075255c4e56ed8ab34a72a9bcfb9bb8bc8",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/panels/sculpture_frame_00320/rendered_inverse_shared.png",
+      "size_bytes": 385750,
+      "package_sha256": "56d0009963f52c999c70645c434de8ea94ca2e5d74263d605120010a5d139914",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/panels/sculpture_frame_00320/rendered_inverse_shared.png",
+      "origin_sha256": "56d0009963f52c999c70645c434de8ea94ca2e5d74263d605120010a5d139914",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/panels/sculpture_frame_00335/da_rendered_shared.png",
+      "size_bytes": 76927,
+      "package_sha256": "af12b93158367201d57487e9e8a7dbaa5919d746c77e6dead4805d12f406a1b6",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/panels/sculpture_frame_00335/da_rendered_shared.png",
+      "origin_sha256": "af12b93158367201d57487e9e8a7dbaa5919d746c77e6dead4805d12f406a1b6",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/panels/sculpture_frame_00335/da_teacher_shared.png",
+      "size_bytes": 87463,
+      "package_sha256": "98ac81860696e7e9391aaee749ae9d717635030917c8fa4cff7f947d9e7a343f",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/panels/sculpture_frame_00335/da_teacher_shared.png",
+      "origin_sha256": "98ac81860696e7e9391aaee749ae9d717635030917c8fa4cff7f947d9e7a343f",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/panels/sculpture_frame_00335/processed_shared.png",
+      "size_bytes": 146424,
+      "package_sha256": "051228d602d9ebbeb6a5beee250347fab72d11c4880f6d02b140848834bb6941",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/panels/sculpture_frame_00335/processed_shared.png",
+      "origin_sha256": "051228d602d9ebbeb6a5beee250347fab72d11c4880f6d02b140848834bb6941",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/panels/sculpture_frame_00335/rendered_inverse_shared.png",
+      "size_bytes": 491816,
+      "package_sha256": "4c3baabe144453e9faf428a4310051631bca00250e642d8255c4f6b128329a64",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/panels/sculpture_frame_00335/rendered_inverse_shared.png",
+      "origin_sha256": "4c3baabe144453e9faf428a4310051631bca00250e642d8255c4f6b128329a64",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/panels/sculpture_frame_00355/da_rendered_shared.png",
+      "size_bytes": 88831,
+      "package_sha256": "c9bcf5382e08711425d33f0ef8014682e54071d360a5f6007539f050a97adc04",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/panels/sculpture_frame_00355/da_rendered_shared.png",
+      "origin_sha256": "c9bcf5382e08711425d33f0ef8014682e54071d360a5f6007539f050a97adc04",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/panels/sculpture_frame_00355/da_teacher_shared.png",
+      "size_bytes": 101221,
+      "package_sha256": "dcc702b4f0d38db98f25bfdf611b999f100db8d10541a1a9d8655429ab395940",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/panels/sculpture_frame_00355/da_teacher_shared.png",
+      "origin_sha256": "dcc702b4f0d38db98f25bfdf611b999f100db8d10541a1a9d8655429ab395940",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/panels/sculpture_frame_00355/processed_shared.png",
+      "size_bytes": 182818,
+      "package_sha256": "d5a03607581e25958a6c06432a3dab1afad4e0b2f8c41140e52a0a6b8da301b9",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/panels/sculpture_frame_00355/processed_shared.png",
+      "origin_sha256": "d5a03607581e25958a6c06432a3dab1afad4e0b2f8c41140e52a0a6b8da301b9",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/panels/sculpture_frame_00355/rendered_inverse_shared.png",
+      "size_bytes": 599306,
+      "package_sha256": "ac892d4de61035afd4d3bfe2b13feb011de832b08217569c50746b1cef1d30b5",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/panels/sculpture_frame_00355/rendered_inverse_shared.png",
+      "origin_sha256": "ac892d4de61035afd4d3bfe2b13feb011de832b08217569c50746b1cef1d30b5",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/sculpture_depth.png",
+      "size_bytes": 2127271,
+      "package_sha256": "de7f05cafbcfb7c561cc00e062264d0414f56e2f420fc1019a968a4e456e6e92",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/sculpture_depth.png",
+      "origin_sha256": "de7f05cafbcfb7c561cc00e062264d0414f56e2f420fc1019a968a4e456e6e92",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/sculpture_depth_vs_da.png",
+      "size_bytes": 2387515,
+      "package_sha256": "0a4260ca8d941c38c2a84ed92cc628c7f3ceae0e5ba9147b5578cef6b77e1c19",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/sculpture_depth_vs_da.png",
+      "origin_sha256": "0a4260ca8d941c38c2a84ed92cc628c7f3ceae0e5ba9147b5578cef6b77e1c19",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/sculpture_rgb.png",
+      "size_bytes": 3367771,
+      "package_sha256": "aee693ce1c3ec5c05e13fb63f3130b2a7a0ed6b9bf96da830a99d5b70c6e06e2",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/sculpture_rgb.png",
+      "origin_sha256": "aee693ce1c3ec5c05e13fb63f3130b2a7a0ed6b9bf96da830a99d5b70c6e06e2",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/source/garden_frame_00002/da_rendered.npy",
+      "size_bytes": 2073728,
+      "package_sha256": "7eb6c395dd485da188b904f796e79a54b82f327de37fecc30a02fb7414a81ede",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/source/garden_frame_00002/da_rendered.npy",
+      "origin_sha256": "7eb6c395dd485da188b904f796e79a54b82f327de37fecc30a02fb7414a81ede",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/source/garden_frame_00002/da_rendered_original_vis.png",
+      "size_bytes": 183831,
+      "package_sha256": "a5f35851be2627d2978da7d94b7e652fa8b425879e8abf71aa41d59653480d58",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/source/garden_frame_00002/da_rendered_original_vis.png",
+      "origin_sha256": "a5f35851be2627d2978da7d94b7e652fa8b425879e8abf71aa41d59653480d58",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/source/garden_frame_00002/da_teacher.npy",
+      "size_bytes": 2073728,
+      "package_sha256": "2434f7573171e27269f09a5a16494b2f5ab0f58404d447b6e1cdbafc479a6b41",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/source/garden_frame_00002/da_teacher.npy",
+      "origin_sha256": "2434f7573171e27269f09a5a16494b2f5ab0f58404d447b6e1cdbafc479a6b41",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/source/garden_frame_00002/da_teacher_original_vis.png",
+      "size_bytes": 305982,
+      "package_sha256": "d2ce2446f131e5e4e3e9473c18506ca67e6cf20db0a815989b1102676c37cbaa",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/source/garden_frame_00002/da_teacher_original_vis.png",
+      "origin_sha256": "d2ce2446f131e5e4e3e9473c18506ca67e6cf20db0a815989b1102676c37cbaa",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/source/garden_frame_00002/gt_rgb.png",
+      "size_bytes": 1241056,
+      "package_sha256": "24384602b060fd4abc9bc8edd0f3114117f0f75f261d9ffa9ef19f635eee9b7b",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/source/garden_frame_00002/gt_rgb.png",
+      "origin_sha256": "24384602b060fd4abc9bc8edd0f3114117f0f75f261d9ffa9ef19f635eee9b7b",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/source/garden_frame_00002/pred_depth_014000.npy",
+      "size_bytes": 1327232,
+      "package_sha256": "436ef5b8584870a78ebd9b11ad9eb0d69e4cbd1866a91edc127af1082185a32c",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/source/garden_frame_00002/pred_depth_014000.npy",
+      "origin_sha256": "436ef5b8584870a78ebd9b11ad9eb0d69e4cbd1866a91edc127af1082185a32c",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/source/garden_frame_00002/pred_depth_014000_original.png",
+      "size_bytes": 480752,
+      "package_sha256": "856bcda30c7259125c7143e71b6bb061cd5f705c507098392cec6611f957bbe6",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/source/garden_frame_00002/pred_depth_014000_original.png",
+      "origin_sha256": "856bcda30c7259125c7143e71b6bb061cd5f705c507098392cec6611f957bbe6",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/source/garden_frame_00002/pred_rgb_014000.png",
+      "size_bytes": 555266,
+      "package_sha256": "201e5a598dfbb9f59f334460cafd63bde160bde69ecc7780653fa2ddfdfc8f07",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/source/garden_frame_00002/pred_rgb_014000.png",
+      "origin_sha256": "201e5a598dfbb9f59f334460cafd63bde160bde69ecc7780653fa2ddfdfc8f07",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/source/garden_frame_00002/rendered_depth.npy",
+      "size_bytes": 2073728,
+      "package_sha256": "079e6b9e38a56fe7dca489fa1bfe582e2daa1cb78262215b554c50725763c104",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/source/garden_frame_00002/rendered_depth.npy",
+      "origin_sha256": "079e6b9e38a56fe7dca489fa1bfe582e2daa1cb78262215b554c50725763c104",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/source/garden_frame_00002/rendered_rgb.png",
+      "size_bytes": 1081901,
+      "package_sha256": "bf519e8847aaa32bee7596aa9af7e44047a38ea467ae51094c2318b934b7b26d",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/source/garden_frame_00002/rendered_rgb.png",
+      "origin_sha256": "bf519e8847aaa32bee7596aa9af7e44047a38ea467ae51094c2318b934b7b26d",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/source/garden_frame_00021/da_rendered.npy",
+      "size_bytes": 2073728,
+      "package_sha256": "b148ab4b76fe635ecb8abeb2af46096d7ba5d98318032db327acf5fa979a6764",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/source/garden_frame_00021/da_rendered.npy",
+      "origin_sha256": "b148ab4b76fe635ecb8abeb2af46096d7ba5d98318032db327acf5fa979a6764",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/source/garden_frame_00021/da_rendered_original_vis.png",
+      "size_bytes": 136582,
+      "package_sha256": "21219e44dfd021aaafd99b4e3ed233b25ee70db389a81e58c3042ca7c077a33c",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/source/garden_frame_00021/da_rendered_original_vis.png",
+      "origin_sha256": "21219e44dfd021aaafd99b4e3ed233b25ee70db389a81e58c3042ca7c077a33c",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/source/garden_frame_00021/da_teacher.npy",
+      "size_bytes": 2073728,
+      "package_sha256": "33e8215aef2edda1c955c11c6ea2aea7911ebeee695bc24d9090f669622d6b9b",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/source/garden_frame_00021/da_teacher.npy",
+      "origin_sha256": "33e8215aef2edda1c955c11c6ea2aea7911ebeee695bc24d9090f669622d6b9b",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/source/garden_frame_00021/da_teacher_original_vis.png",
+      "size_bytes": 440041,
+      "package_sha256": "dfe4a71efff5b93fda15bca1f381bb3601e9e2fbac415fdd06f62e60200cd376",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/source/garden_frame_00021/da_teacher_original_vis.png",
+      "origin_sha256": "dfe4a71efff5b93fda15bca1f381bb3601e9e2fbac415fdd06f62e60200cd376",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/source/garden_frame_00021/gt_rgb.png",
+      "size_bytes": 1336095,
+      "package_sha256": "70399473581d03a02b3bfe155bb8ee89701330e57f408da5e1422179bdb00e1d",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/source/garden_frame_00021/gt_rgb.png",
+      "origin_sha256": "70399473581d03a02b3bfe155bb8ee89701330e57f408da5e1422179bdb00e1d",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/source/garden_frame_00021/pred_depth_014000.npy",
+      "size_bytes": 1327232,
+      "package_sha256": "c6053d89d5cf6ca7627c715e6004ceb0f40fbc452d938d56e32842a8a54b85e8",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/source/garden_frame_00021/pred_depth_014000.npy",
+      "origin_sha256": "c6053d89d5cf6ca7627c715e6004ceb0f40fbc452d938d56e32842a8a54b85e8",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/source/garden_frame_00021/pred_depth_014000_original.png",
+      "size_bytes": 512239,
+      "package_sha256": "67e1ab22fad07cbecb5f7cacfad3f5dee88a4015d8dfb999650c41ce6c231731",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/source/garden_frame_00021/pred_depth_014000_original.png",
+      "origin_sha256": "67e1ab22fad07cbecb5f7cacfad3f5dee88a4015d8dfb999650c41ce6c231731",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/source/garden_frame_00021/pred_rgb_014000.png",
+      "size_bytes": 635885,
+      "package_sha256": "40eb350ff17c7b8de63662d9c56b8462e84f36aab29ed2bb06ea0ff42acf552b",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/source/garden_frame_00021/pred_rgb_014000.png",
+      "origin_sha256": "40eb350ff17c7b8de63662d9c56b8462e84f36aab29ed2bb06ea0ff42acf552b",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/source/garden_frame_00021/rendered_depth.npy",
+      "size_bytes": 2073728,
+      "package_sha256": "4e6b2861bdf71c7aae1b586fa25e320cf4f24ecb8ecb11bbf58a0ddfa0a5e479",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/source/garden_frame_00021/rendered_depth.npy",
+      "origin_sha256": "4e6b2861bdf71c7aae1b586fa25e320cf4f24ecb8ecb11bbf58a0ddfa0a5e479",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/source/garden_frame_00021/rendered_rgb.png",
+      "size_bytes": 1158998,
+      "package_sha256": "535691863fa56209a2f032f6083d7c19088b82f40b0cee28eb4854dfc43c871f",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/source/garden_frame_00021/rendered_rgb.png",
+      "origin_sha256": "535691863fa56209a2f032f6083d7c19088b82f40b0cee28eb4854dfc43c871f",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/source/garden_frame_00041/da_rendered.npy",
+      "size_bytes": 2073728,
+      "package_sha256": "1f707e9ad4ed6f59104dec3a22d9f28e04dc97c8f41af3fb8a56fc18313688d4",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/source/garden_frame_00041/da_rendered.npy",
+      "origin_sha256": "1f707e9ad4ed6f59104dec3a22d9f28e04dc97c8f41af3fb8a56fc18313688d4",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/source/garden_frame_00041/da_rendered_original_vis.png",
+      "size_bytes": 117475,
+      "package_sha256": "9f79cbfab21c1a73c8d82ea3eab5928505ead199bbf04b08aa9cabf327a588ae",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/source/garden_frame_00041/da_rendered_original_vis.png",
+      "origin_sha256": "9f79cbfab21c1a73c8d82ea3eab5928505ead199bbf04b08aa9cabf327a588ae",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/source/garden_frame_00041/da_teacher.npy",
+      "size_bytes": 2073728,
+      "package_sha256": "1c3cb722e9a94289d86da2d487fedec288e526d98e0f8186d8d2d8e65fa51c6a",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/source/garden_frame_00041/da_teacher.npy",
+      "origin_sha256": "1c3cb722e9a94289d86da2d487fedec288e526d98e0f8186d8d2d8e65fa51c6a",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/source/garden_frame_00041/da_teacher_original_vis.png",
+      "size_bytes": 320848,
+      "package_sha256": "9568d107af3f5f8a03797dc477e2512e6bbbb270dbfd95e4a4a4c276164baab4",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/source/garden_frame_00041/da_teacher_original_vis.png",
+      "origin_sha256": "9568d107af3f5f8a03797dc477e2512e6bbbb270dbfd95e4a4a4c276164baab4",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/source/garden_frame_00041/gt_rgb.png",
+      "size_bytes": 1284997,
+      "package_sha256": "6c821a56780ce6709fd71067ef8a7db8a654ee066073c04decf57d6fd49ef2b1",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/source/garden_frame_00041/gt_rgb.png",
+      "origin_sha256": "6c821a56780ce6709fd71067ef8a7db8a654ee066073c04decf57d6fd49ef2b1",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/source/garden_frame_00041/pred_depth_014000.npy",
+      "size_bytes": 1327232,
+      "package_sha256": "374b4ec23d76e7f99378813f3dc3d51c2f742d93eb5f42a3a4dd78568ba111bc",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/source/garden_frame_00041/pred_depth_014000.npy",
+      "origin_sha256": "374b4ec23d76e7f99378813f3dc3d51c2f742d93eb5f42a3a4dd78568ba111bc",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/source/garden_frame_00041/pred_depth_014000_original.png",
+      "size_bytes": 484574,
+      "package_sha256": "26decc1e94443a9aa5a928ffbda80323be80a790b6309fb08c9a3d1472fa581b",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/source/garden_frame_00041/pred_depth_014000_original.png",
+      "origin_sha256": "26decc1e94443a9aa5a928ffbda80323be80a790b6309fb08c9a3d1472fa581b",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/source/garden_frame_00041/pred_rgb_014000.png",
+      "size_bytes": 589861,
+      "package_sha256": "2fe4b16f1869cae84f789c352fc335a21e4a88b74edb8a6ea98b9ab7b44d24f9",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/source/garden_frame_00041/pred_rgb_014000.png",
+      "origin_sha256": "2fe4b16f1869cae84f789c352fc335a21e4a88b74edb8a6ea98b9ab7b44d24f9",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/source/garden_frame_00041/rendered_depth.npy",
+      "size_bytes": 2073728,
+      "package_sha256": "5abe025d6fccdc72ec9f9a9aeb8d53be602d0a1c8ffedb3838c6bca2483e543d",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/source/garden_frame_00041/rendered_depth.npy",
+      "origin_sha256": "5abe025d6fccdc72ec9f9a9aeb8d53be602d0a1c8ffedb3838c6bca2483e543d",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/source/garden_frame_00041/rendered_rgb.png",
+      "size_bytes": 1151881,
+      "package_sha256": "44f0bebbc75bb347c76cfc82cb529f8079ebca0651530d76dae7fa086084e3aa",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/source/garden_frame_00041/rendered_rgb.png",
+      "origin_sha256": "44f0bebbc75bb347c76cfc82cb529f8079ebca0651530d76dae7fa086084e3aa",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/source/sculpture_frame_00320/da_rendered.npy",
+      "size_bytes": 2073728,
+      "package_sha256": "594b802f630531166a6c2f039e1ef709732dd69f2d1ee310c17303c1109015b1",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/source/sculpture_frame_00320/da_rendered.npy",
+      "origin_sha256": "594b802f630531166a6c2f039e1ef709732dd69f2d1ee310c17303c1109015b1",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/source/sculpture_frame_00320/da_rendered_original_vis.png",
+      "size_bytes": 71584,
+      "package_sha256": "5fd7e9f804667313db9a8d88ddf7c7633a4398c93e3181a63c9567d42d2a0fe5",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/source/sculpture_frame_00320/da_rendered_original_vis.png",
+      "origin_sha256": "5fd7e9f804667313db9a8d88ddf7c7633a4398c93e3181a63c9567d42d2a0fe5",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/source/sculpture_frame_00320/da_teacher.npy",
+      "size_bytes": 2073728,
+      "package_sha256": "8a066e07e54c2b3e998a57e82f66603931265b613d451e68d17691b6b3b830f1",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/source/sculpture_frame_00320/da_teacher.npy",
+      "origin_sha256": "8a066e07e54c2b3e998a57e82f66603931265b613d451e68d17691b6b3b830f1",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/source/sculpture_frame_00320/da_teacher_original_vis.png",
+      "size_bytes": 86232,
+      "package_sha256": "a2287e3d0cf7c49899fd69d61cccd3e38739e1fff3378f4cf6cfa47e74c4ba3e",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/source/sculpture_frame_00320/da_teacher_original_vis.png",
+      "origin_sha256": "a2287e3d0cf7c49899fd69d61cccd3e38739e1fff3378f4cf6cfa47e74c4ba3e",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/source/sculpture_frame_00320/gt_rgb.png",
+      "size_bytes": 899001,
+      "package_sha256": "cc3aea8dd83aad26f4a30c87a3f7fdbab3e1ff666848cccc9dc396581ed7c85c",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/source/sculpture_frame_00320/gt_rgb.png",
+      "origin_sha256": "cc3aea8dd83aad26f4a30c87a3f7fdbab3e1ff666848cccc9dc396581ed7c85c",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/source/sculpture_frame_00320/pred_depth_014000.npy",
+      "size_bytes": 1327232,
+      "package_sha256": "0fc7fd8b423ed576f6f1e47b11abc7a07f79c7a8bc370c5684129c4f78cd0179",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/source/sculpture_frame_00320/pred_depth_014000.npy",
+      "origin_sha256": "0fc7fd8b423ed576f6f1e47b11abc7a07f79c7a8bc370c5684129c4f78cd0179",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/source/sculpture_frame_00320/pred_depth_014000_original.png",
+      "size_bytes": 428136,
+      "package_sha256": "e3acd1aac7895858fb3f91c6f09f6aef61942077b14130594682c415e9f330ad",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/source/sculpture_frame_00320/pred_depth_014000_original.png",
+      "origin_sha256": "e3acd1aac7895858fb3f91c6f09f6aef61942077b14130594682c415e9f330ad",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/source/sculpture_frame_00320/pred_rgb_014000.png",
+      "size_bytes": 457190,
+      "package_sha256": "5e807e9cf8e7104c8afaf8a4a1d150e3463a0fb253f32fa3ac25d46fc2170afb",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/source/sculpture_frame_00320/pred_rgb_014000.png",
+      "origin_sha256": "5e807e9cf8e7104c8afaf8a4a1d150e3463a0fb253f32fa3ac25d46fc2170afb",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/source/sculpture_frame_00320/rendered_depth.npy",
+      "size_bytes": 2073728,
+      "package_sha256": "cece070e931bf23177937915cae098042b3ff2be6808e2e1d8aa453850fb2405",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/source/sculpture_frame_00320/rendered_depth.npy",
+      "origin_sha256": "cece070e931bf23177937915cae098042b3ff2be6808e2e1d8aa453850fb2405",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/source/sculpture_frame_00320/rendered_rgb.png",
+      "size_bytes": 846727,
+      "package_sha256": "3ca884c882e615363e0adbf7d82e06bd9da2509161ae8f9a250327f0023e4ffa",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/source/sculpture_frame_00320/rendered_rgb.png",
+      "origin_sha256": "3ca884c882e615363e0adbf7d82e06bd9da2509161ae8f9a250327f0023e4ffa",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/source/sculpture_frame_00335/da_rendered.npy",
+      "size_bytes": 2073728,
+      "package_sha256": "58ec4741df229be36d6b2898bb62cf7538454f0bedae063ce546a241a41fe332",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/source/sculpture_frame_00335/da_rendered.npy",
+      "origin_sha256": "58ec4741df229be36d6b2898bb62cf7538454f0bedae063ce546a241a41fe332",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/source/sculpture_frame_00335/da_rendered_original_vis.png",
+      "size_bytes": 89145,
+      "package_sha256": "41bc52fe89596c4676deacf6e43e2402d5480898af6d6dbdef33b5736f9fc205",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/source/sculpture_frame_00335/da_rendered_original_vis.png",
+      "origin_sha256": "41bc52fe89596c4676deacf6e43e2402d5480898af6d6dbdef33b5736f9fc205",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/source/sculpture_frame_00335/da_teacher.npy",
+      "size_bytes": 2073728,
+      "package_sha256": "cbcfa6058332fbbea71066f476da4421dc5803c5bb83e019a1cbc5539a92c8cd",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/source/sculpture_frame_00335/da_teacher.npy",
+      "origin_sha256": "cbcfa6058332fbbea71066f476da4421dc5803c5bb83e019a1cbc5539a92c8cd",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/source/sculpture_frame_00335/da_teacher_original_vis.png",
+      "size_bytes": 101583,
+      "package_sha256": "5307acf25c59207e232a1e6642cdec8f35f3a81b3fe2ade6da97513b5024cb1b",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/source/sculpture_frame_00335/da_teacher_original_vis.png",
+      "origin_sha256": "5307acf25c59207e232a1e6642cdec8f35f3a81b3fe2ade6da97513b5024cb1b",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/source/sculpture_frame_00335/gt_rgb.png",
+      "size_bytes": 813912,
+      "package_sha256": "3d8cd0d2f0b04efa9fa086e319cd87f8e9c1af12fb27e5e47fa329eed04cac78",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/source/sculpture_frame_00335/gt_rgb.png",
+      "origin_sha256": "3d8cd0d2f0b04efa9fa086e319cd87f8e9c1af12fb27e5e47fa329eed04cac78",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/source/sculpture_frame_00335/pred_depth_014000.npy",
+      "size_bytes": 1327232,
+      "package_sha256": "502782c47357c8e6b2d218b04a5ca6ced80141a96981a3c5e2569d6beaad1062",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/source/sculpture_frame_00335/pred_depth_014000.npy",
+      "origin_sha256": "502782c47357c8e6b2d218b04a5ca6ced80141a96981a3c5e2569d6beaad1062",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/source/sculpture_frame_00335/pred_depth_014000_original.png",
+      "size_bytes": 433281,
+      "package_sha256": "005585e6f1175d544ae7385125f692f7339d60ac7711ce9540eae2d27fb3c6cf",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/source/sculpture_frame_00335/pred_depth_014000_original.png",
+      "origin_sha256": "005585e6f1175d544ae7385125f692f7339d60ac7711ce9540eae2d27fb3c6cf",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/source/sculpture_frame_00335/pred_rgb_014000.png",
+      "size_bytes": 464057,
+      "package_sha256": "cea6c7333cb199b2558b71e644cd8df2614caf4b0b78cd1a81de264fb53ba5e7",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/source/sculpture_frame_00335/pred_rgb_014000.png",
+      "origin_sha256": "cea6c7333cb199b2558b71e644cd8df2614caf4b0b78cd1a81de264fb53ba5e7",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/source/sculpture_frame_00335/rendered_depth.npy",
+      "size_bytes": 2073728,
+      "package_sha256": "6846065715d98682b3d256fd3f99b51a69dbcefaff6ad7080b927b247d9d7010",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/source/sculpture_frame_00335/rendered_depth.npy",
+      "origin_sha256": "6846065715d98682b3d256fd3f99b51a69dbcefaff6ad7080b927b247d9d7010",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/source/sculpture_frame_00335/rendered_rgb.png",
+      "size_bytes": 796830,
+      "package_sha256": "8a6777c72ee8ae8fa5e3979713b7d1d1b50f9599416b1e74607594aa948d6027",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/source/sculpture_frame_00335/rendered_rgb.png",
+      "origin_sha256": "8a6777c72ee8ae8fa5e3979713b7d1d1b50f9599416b1e74607594aa948d6027",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/source/sculpture_frame_00355/da_rendered.npy",
+      "size_bytes": 2073728,
+      "package_sha256": "7fb8337fd9b18c635d6ed2bf55743a65cad5224942e1a04306b08453e486df6d",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/source/sculpture_frame_00355/da_rendered.npy",
+      "origin_sha256": "7fb8337fd9b18c635d6ed2bf55743a65cad5224942e1a04306b08453e486df6d",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/source/sculpture_frame_00355/da_rendered_original_vis.png",
+      "size_bytes": 101717,
+      "package_sha256": "712764b7ec04910e4f131a7e1726b3db639b0fb99701114e65e14bfb5f6c5f3a",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/source/sculpture_frame_00355/da_rendered_original_vis.png",
+      "origin_sha256": "712764b7ec04910e4f131a7e1726b3db639b0fb99701114e65e14bfb5f6c5f3a",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/source/sculpture_frame_00355/da_teacher.npy",
+      "size_bytes": 2073728,
+      "package_sha256": "f479bb2bd8752c044b16daa8f2f15bcd274f13945cd05532debb733db018343a",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/source/sculpture_frame_00355/da_teacher.npy",
+      "origin_sha256": "f479bb2bd8752c044b16daa8f2f15bcd274f13945cd05532debb733db018343a",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/source/sculpture_frame_00355/da_teacher_original_vis.png",
+      "size_bytes": 116361,
+      "package_sha256": "cab49597f09e262a89080154f77d52da118e7ee35a8035a262b5feeacbba19cb",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/source/sculpture_frame_00355/da_teacher_original_vis.png",
+      "origin_sha256": "cab49597f09e262a89080154f77d52da118e7ee35a8035a262b5feeacbba19cb",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/source/sculpture_frame_00355/gt_rgb.png",
+      "size_bytes": 883187,
+      "package_sha256": "cfd94ce4e15d73b6bf401b4e026614010b34a5f948608eca090b72b6bc401d07",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/source/sculpture_frame_00355/gt_rgb.png",
+      "origin_sha256": "cfd94ce4e15d73b6bf401b4e026614010b34a5f948608eca090b72b6bc401d07",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/source/sculpture_frame_00355/pred_depth_014000.npy",
+      "size_bytes": 1327232,
+      "package_sha256": "d9beb3dca97afb1e0a87b7415158a689c3067d4f02ae5dbb5b09bb792b19956b",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/source/sculpture_frame_00355/pred_depth_014000.npy",
+      "origin_sha256": "d9beb3dca97afb1e0a87b7415158a689c3067d4f02ae5dbb5b09bb792b19956b",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/source/sculpture_frame_00355/pred_depth_014000_original.png",
+      "size_bytes": 456217,
+      "package_sha256": "d23be69471fe599c2e9531b3bab660e25526b9f55bfa743ee24f21d36353095d",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/source/sculpture_frame_00355/pred_depth_014000_original.png",
+      "origin_sha256": "d23be69471fe599c2e9531b3bab660e25526b9f55bfa743ee24f21d36353095d",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/source/sculpture_frame_00355/pred_rgb_014000.png",
+      "size_bytes": 480597,
+      "package_sha256": "5cac265586dfb51cd5ec906e776d6c16967f81c95692ab72b7c78778a396f4e3",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/source/sculpture_frame_00355/pred_rgb_014000.png",
+      "origin_sha256": "5cac265586dfb51cd5ec906e776d6c16967f81c95692ab72b7c78778a396f4e3",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/source/sculpture_frame_00355/rendered_depth.npy",
+      "size_bytes": 2073728,
+      "package_sha256": "8eb366a5f1f08279488575d503fcd1bd1d7afd9014eaf38f121a3cd5a095bd02",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/source/sculpture_frame_00355/rendered_depth.npy",
+      "origin_sha256": "8eb366a5f1f08279488575d503fcd1bd1d7afd9014eaf38f121a3cd5a095bd02",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/source/sculpture_frame_00355/rendered_rgb.png",
+      "size_bytes": 846750,
+      "package_sha256": "e52ce50a0b47a5c6b23b07f7da7a162bc10a24aff60a033abfc10ff00e1c8acd",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/source/sculpture_frame_00355/rendered_rgb.png",
+      "origin_sha256": "e52ce50a0b47a5c6b23b07f7da7a162bc10a24aff60a033abfc10ff00e1c8acd",
+      "content_match": true
+    },
+    {
+      "path": "docs/figures/validation_mse.png",
+      "size_bytes": 105473,
+      "package_sha256": "890039d3e3aff6bcbe07bc0808b402be8c6e509c4a20dea4f8e114427a38d52e",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/figures/validation_mse.png",
+      "origin_sha256": "890039d3e3aff6bcbe07bc0808b402be8c6e509c4a20dea4f8e114427a38d52e",
+      "content_match": true
+    },
+    {
+      "path": "docs/method.md",
+      "size_bytes": 8404,
+      "package_sha256": "0df3c3db56832c76b9e5837cd87f4767b30fa61a7ae1a0854a817a8eee093f4b",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/method.md",
+      "origin_sha256": "468b56a52cb5ab610922eba6378dec7e6cfcf05f224ea95cb5dc66d5734595d1",
+      "content_match": false
+    },
+    {
+      "path": "docs/results.md",
+      "size_bytes": 11729,
+      "package_sha256": "dcb6b069aff473f314b79f5c4ff94ac22c7e1d2917426f43b9af268604478b45",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/docs/results.md",
+      "origin_sha256": "dcb6b069aff473f314b79f5c4ff94ac22c7e1d2917426f43b9af268604478b45",
+      "content_match": true
+    },
+    {
+      "path": "environment/requirements.txt",
+      "size_bytes": 492,
+      "package_sha256": "60330551da2020b87ae4a034c21d377c2f871c65ff0b8277b3bd7b60447bb309",
+      "origin": null,
+      "origin_sha256": null,
+      "content_match": null
+    },
+    {
+      "path": "marigold/__init__.py",
+      "size_bytes": 1591,
+      "package_sha256": "91f68ff5d06488f474d8985b5415488a134adf9d85cdcd6b617b8b482d5da0c2",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/marigold/__init__.py",
+      "origin_sha256": "91f68ff5d06488f474d8985b5415488a134adf9d85cdcd6b617b8b482d5da0c2",
+      "content_match": true
+    },
+    {
+      "path": "marigold/marigold_depth_pipeline.py",
+      "size_bytes": 23954,
+      "package_sha256": "9a70b66bb908439076387cb5b70b7b32790b6345cc29028ed1a671d9ae489d8c",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/marigold/marigold_depth_pipeline.py",
+      "origin_sha256": "9a70b66bb908439076387cb5b70b7b32790b6345cc29028ed1a671d9ae489d8c",
+      "content_match": true
+    },
+    {
+      "path": "marigold/util/batchsize.py",
+      "size_bytes": 3874,
+      "package_sha256": "e2e5d27da9bb3db2d77e9137eb1e1aae91b1f1988d6d5378a4aa46d40099992d",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/marigold/util/batchsize.py",
+      "origin_sha256": "e2e5d27da9bb3db2d77e9137eb1e1aae91b1f1988d6d5378a4aa46d40099992d",
+      "content_match": true
+    },
+    {
+      "path": "marigold/util/ensemble.py",
+      "size_bytes": 11442,
+      "package_sha256": "6c1acb52b49b17430cc2845a15e6da896f95a17a0f82beaadca300a96ff4e592",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/marigold/util/ensemble.py",
+      "origin_sha256": "6c1acb52b49b17430cc2845a15e6da896f95a17a0f82beaadca300a96ff4e592",
+      "content_match": true
+    },
+    {
+      "path": "marigold/util/image_util.py",
+      "size_bytes": 5111,
+      "package_sha256": "4c64fcfcc3206d9375ab62cb4cb8837117a6c40653544b5e0d525f5437426dcb",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/marigold/util/image_util.py",
+      "origin_sha256": "4c64fcfcc3206d9375ab62cb4cb8837117a6c40653544b5e0d525f5437426dcb",
+      "content_match": true
+    },
+    {
+      "path": "modify.md",
+      "size_bytes": 5855,
+      "package_sha256": "5549ea47e1178f1425beeb2dcae822a5f8842b0e1b155ba63f43c730642785bd",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/modify.md",
+      "origin_sha256": "5549ea47e1178f1425beeb2dcae822a5f8842b0e1b155ba63f43c730642785bd",
+      "content_match": true
+    },
+    {
+      "path": "script/build_joint_pairs.py",
+      "size_bytes": 1852,
+      "package_sha256": "5818f7dec72b3e97a0c27a4d3fd430b693de33208a6309a57554687c513bf532",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/script/build_joint_pairs.py",
+      "origin_sha256": "0695e17d801a030e211efdb1e51a7f701327ea84373c4f5feb06022bac86ec00",
+      "content_match": false
+    },
+    {
+      "path": "script/data/generate_da2_inverse_depth.py",
+      "size_bytes": 11838,
+      "package_sha256": "8dd9478858651bcaa5e9dd4b16f3a9d429cb374a5a94ddb22796b3eb69933303",
+      "origin": "/data1/lilinwei/Depth-Prior-Optimization-for-SVGS/code/data_maker/generate_da2_inverse_depth.py",
+      "origin_sha256": "8dd9478858651bcaa5e9dd4b16f3a9d429cb374a5a94ddb22796b3eb69933303",
+      "content_match": true
+    },
+    {
+      "path": "script/depth/revalidate.py",
+      "size_bytes": 9136,
+      "package_sha256": "9ef09bfc5f4a7722bb4c74054cffc216535dd9834499bd1ddb07aefabcab11f7",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/script/depth/revalidate.py",
+      "origin_sha256": "9ef09bfc5f4a7722bb4c74054cffc216535dd9834499bd1ddb07aefabcab11f7",
+      "content_match": true
+    },
+    {
+      "path": "script/depth/revisualize_latest.py",
+      "size_bytes": 5776,
+      "package_sha256": "c0d91c89315b807f6cbc979f7a370a47e09fc3d000044f94f4227e65fdb52ab6",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/script/depth/revisualize_latest.py",
+      "origin_sha256": "c0d91c89315b807f6cbc979f7a370a47e09fc3d000044f94f4227e65fdb52ab6",
+      "content_match": true
+    },
+    {
+      "path": "script/depth/run_rgbinvdepth_nomask_noisy2clean.py",
+      "size_bytes": 21068,
+      "package_sha256": "8382e5e01c3d4bd590e964a5af75e31358d42f268e4b0b301eaab5f76c5c4d6e",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/script/depth/run_rgbinvdepth_nomask_noisy2clean.py",
+      "origin_sha256": "8382e5e01c3d4bd590e964a5af75e31358d42f268e4b0b301eaab5f76c5c4d6e",
+      "content_match": true
+    },
+    {
+      "path": "script/depth/train.py",
+      "size_bytes": 22991,
+      "package_sha256": "25c9b9643eca2383773491c207a1c32aca8ac0ccdaacff66d707f02c54a95685",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/script/depth/train.py",
+      "origin_sha256": "25c9b9643eca2383773491c207a1c32aca8ac0ccdaacff66d707f02c54a95685",
+      "content_match": true
+    },
+    {
+      "path": "script/remap_pair_paths.py",
+      "size_bytes": 2595,
+      "package_sha256": "749004e495046a51ddcd736da9f7efca567cd309b587bbd39cc2619062cf33ea",
+      "origin": null,
+      "origin_sha256": null,
+      "content_match": null
+    },
+    {
+      "path": "script/resume_rgbdepth_k24_r100.sh",
+      "size_bytes": 1476,
+      "package_sha256": "7cd94ff9985281691d3cae1de1f56032d0f03212f6aab7a7e3fa2a538553814f",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/script/resume_rgbdepth_k24_r100.sh",
+      "origin_sha256": "985a465d1d0aacd31b0fd63cb01537a437c3ae44bd45d69409fd228eedcf3a60",
+      "content_match": false
+    },
+    {
+      "path": "script/run_training_mark_success.sh",
+      "size_bytes": 1360,
+      "package_sha256": "4101356d83a4933a3deabcc41cb37f1ed318c2c26ad11e12aa775e688f3f56b2",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/script/run_training_mark_success.sh",
+      "origin_sha256": "4101356d83a4933a3deabcc41cb37f1ed318c2c26ad11e12aa775e688f3f56b2",
+      "content_match": true
+    },
+    {
+      "path": "script/train_rgbdepth_k24_r100_perimg.sh",
+      "size_bytes": 3319,
+      "package_sha256": "cf50d82b4fadd3e87c5f2a2edbb97348b0fb1de3771a92f2c9352e5c12927508",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/script/train_rgbdepth_k24_r100_perimg.sh",
+      "origin_sha256": "8aaa682c266e66a797dd573222283cc47263bf08b4fc6e46fa10ac704d7de1b1",
+      "content_match": false
+    },
+    {
+      "path": "script/verify_package.py",
+      "size_bytes": 4868,
+      "package_sha256": "1862e1bdb177c3626c273d424b93d771666ca1c38cf2dd84c646e8abd884f6a0",
+      "origin": null,
+      "origin_sha256": null,
+      "content_match": null
+    },
+    {
+      "path": "script/wait_for_4gpus_and_launch.sh",
+      "size_bytes": 4098,
+      "package_sha256": "f7263d7b949ab28d35ff531318657f5e75a9497b7e2ff493d2ce44a5a723c961",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/script/wait_for_4gpus_and_launch.sh",
+      "origin_sha256": "f7263d7b949ab28d35ff531318657f5e75a9497b7e2ff493d2ce44a5a723c961",
+      "content_match": true
+    },
+    {
+      "path": "src/__init__.py",
+      "size_bytes": 1411,
+      "package_sha256": "1affa4b8b55c3bbccbb362ca6aca8dcabd1f86ab809154b312711ca836a8a270",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/src/__init__.py",
+      "origin_sha256": "1affa4b8b55c3bbccbb362ca6aca8dcabd1f86ab809154b312711ca836a8a270",
+      "content_match": true
+    },
+    {
+      "path": "src/dataset/__init__.py",
+      "size_bytes": 2623,
+      "package_sha256": "03e0ee647152ab170f062935b3c0db11197e986f5e72b19dc79d4f93a8438569",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/src/dataset/__init__.py",
+      "origin_sha256": "03e0ee647152ab170f062935b3c0db11197e986f5e72b19dc79d4f93a8438569",
+      "content_match": true
+    },
+    {
+      "path": "src/dataset/base_depth_dataset.py",
+      "size_bytes": 17146,
+      "package_sha256": "783bb0bbbd4078fad6e7cac65d886a48f0e644bae59beb02979c926659d0c912",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/src/dataset/base_depth_dataset.py",
+      "origin_sha256": "783bb0bbbd4078fad6e7cac65d886a48f0e644bae59beb02979c926659d0c912",
+      "content_match": true
+    },
+    {
+      "path": "src/dataset/mixed_sampler.py",
+      "size_bytes": 5420,
+      "package_sha256": "807ecd8cba82019c30f071a6a630094c26f70858749220ab5512ea3eaf1159e9",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/src/dataset/mixed_sampler.py",
+      "origin_sha256": "807ecd8cba82019c30f071a6a630094c26f70858749220ab5512ea3eaf1159e9",
+      "content_match": true
+    },
+    {
+      "path": "src/dataset/rgb_invdepth_teacher_dataset.py",
+      "size_bytes": 9430,
+      "package_sha256": "95942cc69bf603fb8c1668d77b6d9240dbfbab9beb94ca79998dc2add2d6ab90",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/src/dataset/rgb_invdepth_teacher_dataset.py",
+      "origin_sha256": "95942cc69bf603fb8c1668d77b6d9240dbfbab9beb94ca79998dc2add2d6ab90",
+      "content_match": true
+    },
+    {
+      "path": "src/dataset/transforms_misc.py",
+      "size_bytes": 1069,
+      "package_sha256": "55e3ba255475e503e2d0e050c5f76f1f077a99e38065d5760227699911694bfb",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/src/dataset/transforms_misc.py",
+      "origin_sha256": "55e3ba255475e503e2d0e050c5f76f1f077a99e38065d5760227699911694bfb",
+      "content_match": true
+    },
+    {
+      "path": "src/trainer/__init__.py",
+      "size_bytes": 1777,
+      "package_sha256": "8e0af50b99ffb7687bee4b99c8245a85c42e0acaac9cef07b9dbd52170e65735",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/src/trainer/__init__.py",
+      "origin_sha256": "8e0af50b99ffb7687bee4b99c8245a85c42e0acaac9cef07b9dbd52170e65735",
+      "content_match": true
+    },
+    {
+      "path": "src/trainer/marigold_depth_trainer.py",
+      "size_bytes": 54054,
+      "package_sha256": "cbd15797c61104e66744fd5cee190b2ac5d8761aa056d23d9ca6bbc18dadf93e",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/src/trainer/marigold_depth_trainer.py",
+      "origin_sha256": "cbd15797c61104e66744fd5cee190b2ac5d8761aa056d23d9ca6bbc18dadf93e",
+      "content_match": true
+    },
+    {
+      "path": "src/trainer/marigold_depth_trainer_earlystop.py",
+      "size_bytes": 9672,
+      "package_sha256": "0627f46dfaa8e3adc96cb71ea9479762937ebd366cfe434c9020e60943fdf4cd",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/src/trainer/marigold_depth_trainer_earlystop.py",
+      "origin_sha256": "0627f46dfaa8e3adc96cb71ea9479762937ebd366cfe434c9020e60943fdf4cd",
+      "content_match": true
+    },
+    {
+      "path": "src/util/alignment.py",
+      "size_bytes": 3460,
+      "package_sha256": "872acee09b4610b12775cb8dee4c69e84fc5a454e0cab351e9cd5ade3d4079a6",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/src/util/alignment.py",
+      "origin_sha256": "872acee09b4610b12775cb8dee4c69e84fc5a454e0cab351e9cd5ade3d4079a6",
+      "content_match": true
+    },
+    {
+      "path": "src/util/config_util.py",
+      "size_bytes": 5338,
+      "package_sha256": "edc0f074ca8100281811b7992d07ef5e3d749182794ea8737d04abb933219b7a",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/src/util/config_util.py",
+      "origin_sha256": "edc0f074ca8100281811b7992d07ef5e3d749182794ea8737d04abb933219b7a",
+      "content_match": true
+    },
+    {
+      "path": "src/util/data_loader.py",
+      "size_bytes": 4965,
+      "package_sha256": "de05607bf5ead01289407ee31e316114d02af9dc118d8dc4f73bd415ab8a8d09",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/src/util/data_loader.py",
+      "origin_sha256": "de05607bf5ead01289407ee31e316114d02af9dc118d8dc4f73bd415ab8a8d09",
+      "content_match": true
+    },
+    {
+      "path": "src/util/depth_transform.py",
+      "size_bytes": 5108,
+      "package_sha256": "9bd193aa3bc248e9a0a5d48f56f378a6b0a55205cd7b77aee668c10b61ccb577",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/src/util/depth_transform.py",
+      "origin_sha256": "9bd193aa3bc248e9a0a5d48f56f378a6b0a55205cd7b77aee668c10b61ccb577",
+      "content_match": true
+    },
+    {
+      "path": "src/util/image_util.py",
+      "size_bytes": 3830,
+      "package_sha256": "f5b694e46dcb4a81130889dad308c453b92432f484bcceb064b3f08e3e75b2c2",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/src/util/image_util.py",
+      "origin_sha256": "f5b694e46dcb4a81130889dad308c453b92432f484bcceb064b3f08e3e75b2c2",
+      "content_match": true
+    },
+    {
+      "path": "src/util/logging_util.py",
+      "size_bytes": 4240,
+      "package_sha256": "fac9aeb6275d8ea4d45816f181ad0efa6c5d4f27a637d87d3e392a3e1eee11c9",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/src/util/logging_util.py",
+      "origin_sha256": "fac9aeb6275d8ea4d45816f181ad0efa6c5d4f27a637d87d3e392a3e1eee11c9",
+      "content_match": true
+    },
+    {
+      "path": "src/util/loss.py",
+      "size_bytes": 5454,
+      "package_sha256": "611237272c1b8acb8707a9c9e17ee0144c51d2591f68e694477ea41a1b016846",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/src/util/loss.py",
+      "origin_sha256": "611237272c1b8acb8707a9c9e17ee0144c51d2591f68e694477ea41a1b016846",
+      "content_match": true
+    },
+    {
+      "path": "src/util/lr_scheduler.py",
+      "size_bytes": 2877,
+      "package_sha256": "e69f9a74d162487689c6c6c3b41f539f70346aa89e1264238962b88167a63f17",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/src/util/lr_scheduler.py",
+      "origin_sha256": "e69f9a74d162487689c6c6c3b41f539f70346aa89e1264238962b88167a63f17",
+      "content_match": true
+    },
+    {
+      "path": "src/util/metric.py",
+      "size_bytes": 11220,
+      "package_sha256": "84cb25884bfe37ea49dacc4e501746ed37984d559f385131def26468c893f83a",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/src/util/metric.py",
+      "origin_sha256": "84cb25884bfe37ea49dacc4e501746ed37984d559f385131def26468c893f83a",
+      "content_match": true
+    },
+    {
+      "path": "src/util/multi_res_noise.py",
+      "size_bytes": 4080,
+      "package_sha256": "92942c3f3001616ac84149efd0501ce72ca0863051e8427a4d6ce2abdc84bfe2",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/src/util/multi_res_noise.py",
+      "origin_sha256": "92942c3f3001616ac84149efd0501ce72ca0863051e8427a4d6ce2abdc84bfe2",
+      "content_match": true
+    },
+    {
+      "path": "src/util/seeding.py",
+      "size_bytes": 2121,
+      "package_sha256": "d8b6cf57414d7c911a1a7bbf4e26262d8ae31760294395ea8f333ad9888d98cb",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/src/util/seeding.py",
+      "origin_sha256": "d8b6cf57414d7c911a1a7bbf4e26262d8ae31760294395ea8f333ad9888d98cb",
+      "content_match": true
+    },
+    {
+      "path": "src/util/slurm_util.py",
+      "size_bytes": 1664,
+      "package_sha256": "207e7b16b566da922e334c8d6cc2e6bef79f33bc2547d2e3202ad403befbaffd",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/src/util/slurm_util.py",
+      "origin_sha256": "207e7b16b566da922e334c8d6cc2e6bef79f33bc2547d2e3202ad403befbaffd",
+      "content_match": true
+    },
+    {
+      "path": "tests/test_joint_teacher_local_contract.py",
+      "size_bytes": 9328,
+      "package_sha256": "b89b65849f6fcf0c96ed3f74d9683fafcd6effddbf5e152c7a6a38a27f8e3003",
+      "origin": "/data1/lilinwei/code/Ad23e/npydepthdenoiser/DepthDenoiserJointTeacher/tests/test_joint_teacher_local_contract.py",
+      "origin_sha256": "b89b65849f6fcf0c96ed3f74d9683fafcd6effddbf5e152c7a6a38a27f8e3003",
+      "content_match": true
+    }
+  ]
+}
